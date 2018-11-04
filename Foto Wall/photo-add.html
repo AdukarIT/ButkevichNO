@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Добавление нового поста...</title>
+</head>
+
+<body>
+	<header>
+		<p>
+			<img src="img/logo.jpg" alt="logo">
+		</p>
+
+		<h1>Фото Волл</h1>
+		
+		<br>
+		
+		<h2>Идет публикация контента</h2>
+		
+		<h2>
+			<a href="feed.html"> &#9754; Вернуться в ленту</a>
+		</h2>
+	</header>
+
+	
+	<div id="createNewPost">
+		<form name="newPost" action="feed.html" method="POST">
+	  
+			<label>Текст публикации:<br>
+				<textarea name="comment" cols="30" rows="2" placeholder=""></textarea>				
+			</label>
+  
+			<br>
+			<br>
+
+			<label>Выберите для публикации:
+				<input type="file" name="content" accept="image/*" multiple>
+			</label>
+  				
+  			<br>
+			<br>
+
+			<button>Опубликовать</button>
+		</form>
+	</div>
+
+	
+</body>
+
+</html>
