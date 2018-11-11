@@ -21,3 +21,11 @@
  [Задание 1. Соцсеть фотографий и видео](https://github.com/AdukarIT/ButkevichNO/tree/master/Foto%20Wall)
 
  [Задание 2. Сайт руководств по изучению иностранных языков](https://github.com/AdukarIT/ButkevichNO/tree/master/Language%20courses)
+
+## CSS. Позиционирование
+
+ [Блочные и строчные элементы](https://webref.ru/node/1865/quiz-results/2610/view)
+
+ [Свойства позиционирования](https://webref.ru/node/1921/quiz-results/2663/view)
+
+ [Фон в CSS](https://webref.ru/node/1459/quiz-results/2656/view)
