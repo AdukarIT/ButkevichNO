@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Интернет-магазин "ИнСафрик"</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1 class="store-name">ИнСафрик</h1>
+	</header>
+
+	<div class="clear"></div>
+
+	<div class="menu">
+		<ul class="menu-list">
+		    <li class="menu-list__technic"> 
+		    	<a class="menu-list__item" href="#">Бытовая техника &darr;</a>
+		    	<ul class="list-item list-item__technic">
+		        	<li>
+		          		<a class="list-item__category" href="#">Стиральные машины</a>
+		        	</li>
+			        <li>
+			        	<a class="list-item__category" href="#">Пылесосы</a>
+			        </li>
+			        <li>
+			          	<a class="list-item__category" href="#">Швейные, вышивальные машины</a>
+			        </li>
+			        <li>
+			          	<a class="list-item__category" href="#">Утюги</a>
+			        </li>
+			        <li>
+			          	<a class="list-item__category" href="#">Электровеники</a>
+			        </li>
+			        <li>
+			          	<a class="list-item__category" href="#">Сушилки для обуви</a>
+			        </li>
+		      	</ul>
+		    </li>
+		    <li class="menu-list__kitchen">
+      			<a class="menu-list__item" href="#">Техника для кухни &darr;</a>
+		    	<ul class="list-item list-item__kitchen">
+		        	<li>
+		          		<a class="list-item__category" href="#">Холодильники</a>
+		        	</li>
+			        <li>
+			        	<a class="list-item__category" href="#">Кухонные плиты</a>
+			        </li>
+			        <li>
+			          	<a class="list-item__category" href="#">Морозильники</a>
+			        </li>
+			        <li>
+			          	<a class="list-item__category" href="#">Настольные плиты</a>
+			        </li>
+			        <li>
+			          	<a class="list-item__category" href="#">Ростеры, мини-печи</a>
+			        </li>
+			        <li>
+			          	<a class="list-item__category" href="#">Вытяжки</a>
+			        </li>
+			        <li>
+			          	<a class="list-item__category" href="#">Микроволновые печи</a>
+			        </li>
+		      	</ul>
+    		</li>
+		    <li class="menu-list__computer">
+		      <a class="menu-list__item" href="#">Компьютерная техника &darr;</a>
+		      <ul class="list-item list-item__computer">
+		        	<li>
+		          		<a class="list-item__category" href="#">Ноутбуки</a>
+		        	</li>
+			        <li>
+			        	<a class="list-item__category" href="#">Планшеты</a>
+			        </li>
+			        <li>
+			          	<a class="list-item__category" href="#">Компьютеры, моноблоки</a>
+			        </li>
+			        <li>
+			          	<a class="list-item__category" href="#">Игровые приставки</a>
+			        </li>
+			        <li>
+			          	<a class="list-item__category" href="#">Серверное оборудование</a>
+			        </li>
+		      	</ul>
+		    </li>
+		    <li>
+		      <a class="menu-list__item" href="#">Корзина </a>
+		    </li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+	<form class="order" mathod="POST" name="sent_order" action="#">
+		<label class="order-line__name">Форма заказа</label>
+
+		<label class="order-line order__user-name">
+	    	<span>Фамилия и имя</span>
+	    	<input type="text" name="firstname" placeholder="Фамилия и Имя" required>
+	  	</label>
+	  
+	  	<label class="order-line order__phone-number">
+	    	<span>Номер телефона</span>
+	    	<input type="tel" name="phonenumber" placeholder="+375 (29) 958-88-77" required>
+	  	</label>
+	  
+	  	<label class="order-line order__email">
+	    	<span>E-mail</span>
+	    	<input type="email" name="email" placeholder="mymail@gmail.com" required>
+	  	</label>
+	  
+	  	<label class="order__shipping">
+	    	<span class="order__shipping-name">Выберите способ доставки</span>
+	    
+	   		<span class="order__shipping-address">
+	    		<input class="shipping-address__self" type="checkbox" name="self" value="shipping1"> Самовывоз со склада по адресу <span class="shipping-address__self_underline">ул. Притыцкого д.2 офис 229</span> <br>
+	      		<p class="map">
+	       			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac801d94c6968f0d34313d475eff57bd5df209aa9568ba23b9cc541b0276aaaa1&amp;source=constructor" width="870" height="469" frameborder="0"></iframe>
+	      		</p>
+	      		<input class="shipping-address__courier" type="checkbox" name="courier" value="shipping2"> Курьером по Минску <br>
+	      		<p class="courier">
+	       			<span>Введите адрес доставки:</span>
+	        		<input class="courier__nameaddress" type="text" name="nameaddress">
+	    		</p>
+	    	</span>
+	  	</label>
+
+	  	<label class="order-line order__comment">
+	  		<span>Ваш комментарий к заказу</span>
+	  		<textarea rows="5"></textarea>
+	   	</label>
+
+	   	<label class="order-line order__delivery-conditions">
+	   		<input type="checkbox" name="" required>
+	   		<span>"Я прочитал и согласен с условиями доставки"</span>
+	   	</label>
+	   	<br>
+	   	<label  class="order__confirm-order">
+	   		<button class="order__confirm-order--hover">Подтвердить заказ</button>
+	   	</label>
+	</form>
+
+	<footer class="info">
+		<div class="info__address">
+			<p>Наш адресс: <a href="https://yandex.ru/maps/?um=constructor%3A3e4d7b86872c659ee4638641107ce0ba7fa5f5f81c95731296381cde5a179baf&source=constructorLink" target="_blank"> г. Минск, ул. Комсамольская д. 15 офис 452 </a> </p>
+			<p>Время работы: Будние 10:00-19:00, Суббота 10:00-16:00, Вс - выходной.</p>
+		</div>
+		<div class="info__contacts">
+			<p>Контакты: 
+				<a href="tel:+375 (29) 455-19-66">+375 (29) 455-19-66</a>; 
+				<a href="tel:+375 (17) 356-19-00">+375 (17) 356-19-00</a>
+			</p>
+			<p>Skype: <a href="skype:InSafrik_007">InSafrik_007</a></p>
+		</div>
+	</footer>
+</body>
+
+</html>
