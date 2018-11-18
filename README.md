@@ -29,3 +29,7 @@
  [Свойства позиционирования](https://webref.ru/node/1921/quiz-results/2663/view)
 
  [Фон в CSS](https://webref.ru/node/1459/quiz-results/2656/view)
+
+## Основы CSS. Позиционирование
+ 
+ [Форма заказа в интернет-магазине](https://github.com/AdukarIT/ButkevichNO/tree/master/Online%20store)
