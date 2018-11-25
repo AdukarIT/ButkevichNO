@@ -1,0 +1,85 @@
+.site-header {
+  border-bottom: 3px solid #008000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Amatic SC', cursive;
+}
+
+.logo-site__image, .logo-site__name {
+  float: left;
+}
+
+.logo-site__image {
+  margin: 1.5em;
+}
+
+.logo-site__name {
+  margin: 1.2em 0 0 0;
+  font-size: 20pt;
+}
+
+.search-site {
+  float: left;
+  margin: 2em 1em 0 5em;
+}
+
+.search-site__text {
+  padding: .8em;
+  border: 2px solid #008000;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Amatic SC', cursive;
+}
+
+.search-site__text::placeholder {
+  color: #008000;
+  font-family: 'Amatic SC', cursive;
+  font-size: 11pt;
+}
+
+.menu-site {
+  float: left;
+  margin: -.4em 0 0 6em;
+  font-size: 17pt;
+}
+
+.menu-site__list {
+  padding: 0;
+  list-style: none;
+}
+
+.menu-site__list li {
+  display: inline-block;
+  padding: 0;
+}
+
+.menu-site__list li:nth-child(2),  .menu-site__list li:nth-child(3) {
+  border-left: 2px solid #008000;
+}
+
+.menu-site__list a {
+  color: #000;
+  display: block;
+  padding: 1em;
+}
+
+.menu-site__list a:hover {
+  color: #008000;
+}
+
+.phone-number {
+  float: left;
+  margin: 1.5em 0 0 7em;
+  font-size: 17pt; 
+}
+
+.phone-number__link {
+  color: #000;
+}
+
+.phone-number__link:hover {
+  color: #008000;
+}
