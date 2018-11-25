@@ -36,10 +36,10 @@
 
 ## CSS. Стилистическое оформление элементов
 
- [Пляж](https://github.com/AdukarIT/ButkevichNO/tree/master/beach)
+ [Задание 1. Пляж](https://github.com/AdukarIT/ButkevichNO/tree/master/beach)
 
- [Лайк](https://github.com/AdukarIT/ButkevichNO/tree/master/Like)
+ [Задание 2. Лайк](https://github.com/AdukarIT/ButkevichNO/tree/master/Like)
 
- [Чекбокс](https://github.com/AdukarIT/ButkevichNO/tree/master/Checkbox)
+ [Задание 3. Чекбокс](https://github.com/AdukarIT/ButkevichNO/tree/master/Checkbox)
 
- [Header магазина](https://github.com/AdukarIT/ButkevichNO/tree/master/header%20menu)
+ [Задание 4. Header магазина](https://github.com/AdukarIT/ButkevichNO/tree/master/header%20menu)
