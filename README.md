@@ -33,3 +33,13 @@
 ## Основы CSS. Позиционирование
  
  [Форма заказа в интернет-магазине](https://github.com/AdukarIT/ButkevichNO/tree/master/Online%20store)
+
+## CSS. Стилистическое оформление элементов
+
+ [Пляж](https://github.com/AdukarIT/ButkevichNO/tree/master/beach)
+
+ [Лайк](https://github.com/AdukarIT/ButkevichNO/tree/master/Like)
+
+ [Чекбокс](https://github.com/AdukarIT/ButkevichNO/tree/master/Checkbox)
+
+ [Header магазина](https://github.com/AdukarIT/ButkevichNO/tree/master/header%20menu)
