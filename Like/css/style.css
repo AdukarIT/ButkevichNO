@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?93731887');
+    src: url('../font/fontello.eot?93731887#iefix') format('embedded-opentype'),
+        url('../font/fontello.woff?93731887') format('woff'),
+        url('../font/fontello.ttf?93731887') format('truetype'),
+        url('../font/fontello.svg?93731887#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.like {
+    margin: 2em 0 0 3em;
+}
+
+.like__button--switch {
+    display: inline-block;
+}
+
+.like__button--switch [type="checkbox"] {
+    display: none;
+}
+
+.like__button--switch span {
+    display: block;
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20pt; 
+    color: #808080;
+    cursor: pointer;
+}
+
+.like__button--switch span:hover {
+	color: #0000FF;
+}
+
+.like__button--switch :checked~span {
+    color: #FF0000;
+}
+
+.like__button--switch :checked~span:hover {
+    color: rgba(255,0,0,.3);
+}
