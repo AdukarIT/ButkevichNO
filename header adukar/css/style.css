@@ -1,0 +1,181 @@
+@font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.eot?74750010');
+      src: url('../font/fontello.eot?74750010#iefix') format('embedded-opentype'),
+           url('../font/fontello.woff?74750010') format('woff'),
+           url('../font/fontello.ttf?74750010') format('truetype'),
+           url('../font/fontello.svg?74750010#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+.head-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 610px;
+  width: 100%;  
+  background-image: url('https://static.tildacdn.com/tild3566-3137-4638-a432-643863316231/land-ct.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.head-gradient {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(46,18,18,0.6));
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 610px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 580px;
+  width: 100%;
+  z-index: 3;
+}
+
+.head__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+}
+
+.head__menu--name {
+  margin: 20px;
+}
+
+.menu__catalog {
+  list-style: none;
+  display: inline-block;
+}
+
+.menu__catalog li{
+  display: inline-block;
+}
+
+.menu__catalog li:nth-child(1){
+  padding-right: .8em;
+}
+
+.menu__catalog li:nth-child(2), .head__menu--name{
+  padding-left: .8em;
+}
+
+.head__menu--cotacts {
+  margin-right: 2em;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+.link--hover:hover{
+  text-decoration: underline;
+}
+
+.link__media {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  font-size: 15pt;
+  font-style: none;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.link-phone-number {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.5em;
+}
+
+.head__name {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center; 
+ height: 90%;
+ width: 100%;
+ text-align: center;
+}
+
+.head__name-top--style {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #fff;
+  line-height: .4;
+}
+
+.head__name-top--style-small {
+  font-size: 25px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.head__name-middle {
+  display: flex;
+}
+
+.head__name-middle--block {
+  display: flex;
+  align-items: center;
+  width: 17em;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.head__name-middle--block:nth-child(2), .head__name-middle--block:nth-child(3) {
+  margin-left: 1.5em;
+}
+
+.block-image {
+  width: 60px;
+  height: 60px;
+}
+
+.head__name-bottom {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.button__register-lesson {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  border: 2px solid #e55;
+  background-color: #e55;
+  line-height: 2;
+  padding: 7px 15px;
+  border-radius: 7px;
+}
+
+.button__register-lesson:hover {
+  color: #e55;
+  background-color: #fff;
+}
