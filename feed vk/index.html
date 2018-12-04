@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feed</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="head">
+		<div class="head__name">
+			<a class="head__name-style" href="https://vk.com/feed"><i class="icon-vkontakte">&#xf189;</i></a>
+		</div>
+
+		<div class="head__search">
+			<input class="search-panel" type="search" name="search" placeholder="Поиск...">
+		</div>
+
+		<div class="head__button">
+			<a class="head__notification" href="#">
+				<img class="button__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH+SURBVGhD7Zi7SgNBFIYjVgqCYqMQs9ndgPEJbEUQ3dloUpjC1jyBoHFnVkjl5RV8ALEXL42FjSii7yC+gViohZczegISD8FJZjYrzAd/kzl7/vMzO5tsMhaLJXkctj7mhuKWklzDsvTjlTZzXig+SMEalqUfGyRt5Fk0TYYAyTUsSy19HotXYNhr0PvP4VsEa/xK1sprvi9NCQ7bmnIZvyOGbi8mbpwSL2Kb3uKXeAVCPJGD/kFuyB99JsrYrjd4gQggxCs1oIpkDzfgc9g2WQoLsd/NTrRK9sotxi62Tww42OKCGqgbuUycY/9kyIdinhpEh/wwnkEb88ABPaWG0CHYlRO0Mct4qTEIP/5eqCH0iD9nl9cG0M4c8ulCD6BRQTyLduaAp0uNNNco2PFVtDMHbH2dMtcpCMLRzhwe4xFlrlMQZBftzGGDKMgGUcEGUZANooINoiAbRAUbREHmg1Sr/RDkiDLXKQhyJr3QVTPQGN7eDiljE5Je+sMkHKIpvWF6FKIpbWHckO9RBklKzoDjdA4cvAOqeZKSM+A4nSPf0UH7PVYNx7EoM7m0MeSGcbWdZA2Wp5dcGI3Al+Ybda9/CdaccmMYy9NNu79UYe0Yy9KPX44n4IA+/A7C7wsL9SyW/Q+KlWgUbqMd2IFLKY+JbfkZLlsslkTJZD4B2Cs4LLQLw0EAAAAASUVORK5CYII=">
+			</a>
+
+			<a class="head__music" href="#">
+				<img class="button__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPUSURBVGhD7VpNaBNBGG39VxQEf6u1yW5SW3rwUu8BtW2yu221GuhJxJ/etFZam9koqyhetIL4g2cPVZCCiIKKigWVHhRFPOhBRKEHEakigra1+iadVrf50szG3WSFPHgs3cz35r3dmdnZpCV+RW1t22xFT25SdHZG0dhT8KWqm6cDzdZi0cS/4CZVnbUqmnkZpj+DvwgOlMTjM0WJfxBo6A6qmrkP5u8qujlMGE+jEmN1orygKFVj5nqYPoYAzymjEtwvtPKLQMSaB/MxmL8I84OEMWfUWEJIe4+1hrU0pJvbYb4PE/UraShXeh2kUk+oQS3RiQnbjys/Sppwg14FUeus5TB+FZ2MpXXqBb0IEo4eLIf427TOvKTrQSxrBh5Yj8jOvKTbQSDYQnbkNd0OgtXoCtmR13Q9iG4+ITtyixobwgr4DMN3ZMp5t4OwF7YOXCDu8nsYPcs3jJGINSvVj5E8YGvn1yDjO1t2nG9dIFs6rv4H2IfpthrfBNHYTwzLh3j2dIUaE2EhlxG+CgLj32HoZlBne5RGtkJISKHwQTBZ0aYX4z1e1dS1SJQ5RkGC8A0iOr4QNBL1NXFrjmj6TyhEkIGKBrNMfOwa8hsEE7hSN1eLj1xFnoOYg+K068hrEHT2Tpx2HcUgsigGcYhiEFkUg1DAa3PAYNXQ2oJ92c6QbraFtESUP2D/iyB89wtjeP9gH2xmJ4gHLY6vp5zzT5BwdO9cGOrB3uyHzaQM/RIkHGXLUDMwacwp/RCkfFvHfLTPPQSnH4LAxAmbqVzoOAhWkqDBIig+DKP8x5c72Bw+wPGSEjN34zg5CWWCVG9OLMlpTkwh/35ZSE4P/kKEDju4OUqIokwQEZ6sd0bWKiQzA+/T69DYvtxJUCYI7uYpqtYRsRwHtWRASNJQY8kN/FWVFMhCuSCsh6p1RI3dEnI0sCTWoGGmHyCzUmpoaWwXVStL/k1MsOFQlZAjUQojj6liWcoEwdxbiCs6RNVnpWaOYo5tFVI0VINtJIsdEEHeCLlpgSAtfJxTGpmIZf5LSDObhURmYBU4Twk4IpZlIZcVimE2Yph9JHXsHEOIXtXorhCl0wMmbhMijojxy4ScFFLDTGftMHoPx0+TOqnFhvVD72g4mgyJ5nLArb7+tymn5J0HtM6VQi4nlBnWAv4AFn/mBlyVI5RBebJ2IVVY8DGIu/KNNpmV54SMP4Cr2sqXOMIoSYzhYbTvRmna7xkFx/gyzF5RxieIYTiCEH38ASrKfIrUjjdRD9MnYfoaTN/H8QaO/P9Idqxp6lolWhbhPkpKfgNsYRS4OVug7QAAAABJRU5ErkJggg==">
+			</a>
+		</div>
+
+		<div class="head__user">
+			<div class="head__user-name user"><a class="user-name--style" href="#">Никита</a></div>
+			<img class="head__user-photo user" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPrSURBVGhD7VhNbAxhGF7/Ef8OEkRcOBAcREhcBYmDEOEgcZOIEhEHPTTSQyWCpIcmTRRBgkQn3Z3dYrU1P21VI/vNttWUA3WQIBIUSUsRXc+7/UbYfae7szvT3cM8yZN25v353uf7nw0FCBAggGuoZu/Ce4/6F+XDxu7u2TKsPBDVetZGDCum6tZ31bBSrqiLdxFDVJVcVFRP7I7o1i+2SBeEmKfKQ2uBTDu5uKv1LsdIfOUKK4QRXdyRqScXmBZnuIIKJYSMRduSy2T6yQMab8ssplhimu6X6b2HYg7M5XYdNPwps5Biialay7XVYFkzZDnuoCjKNFWzTiL5q8zGSkHaUDD1WqJmcpMsMTdIBAKbuISlJna3UdopZakTA8qPcknKhajvc2NL92JZrjPg2M8lKDNWyHJ5VFenpnpxwNlMz21DvEHnDHH2Qol8DbJkHnS6coFuiEZeqoaojLQn11DHyNQhuobAvhP2K7D/yIxzQ3TObZmWR1FCcNeKaOK4ogzMlOlC8fiLWWpHYkW4tW+JfJVGk55ciWKa2Tx50Dch2P/fQ8RmymGa5nT0+BG8e4y/v//6YJFSAWFNbCS/VCo1Be9rbLsb+iIESUeihthC8U3tPavx/IzzswlBYxBZR4IpBs/1nN9E9GdEcHBSbMxMrsLzxyy7MxUaFRIEMa52Sh+EiEFaE+licowER8SconZxAd3F2Z3ouRAkrKI41RSHOXsuYiSGqE3KgVyvOR+OngsJm4l1FIfEnZw9L+qJQ+M5rDrWztBTIbRo6VYqd6m/u5N7isvUNvLlfTXyVgi2XIoJd4ilnD1foqhmyqOa1h7OztFjIWKYYuh7gbO7oEJ5sOAPMjaWngohxuNP5lMc/nez7f5P3To7nkOcZu0MPRdifxtgfl/n7HlRT2xN5zCs+6ydoedC0Js3KC6mJTcUtOB1q4vi6Yc9FDfK+jD0QYj4SdcSisWV/Tzr40AUM0IdQLHohHOcjxO9F0LUxQP6PE5/5+viJuuTQRQyTKc5tam2i/UYmW+cnxP9EQIi8UWKlzfaCqyZD5k+NuHbaY8EXe8xGoOc30T0TQgRU+uq/S0S7eqah+cDEFSPRRxD79+CT419SybQrQDvCvqVxlchaerieVSz9tLIyJRZoHMnvZ5cTqd/6b8QSTT0FsVeChvihGok9tF9ClOoEiPUgr9FfeYScwppbe2bwwWWHbGpyJKdAccvWYFlR3FBlusMOCrZgeXG5DZZrjNoN8EcHOETlJ60zmSpuRHWxHYEFX4R9I9tdJ2RZeYHCggb1jGMzjUkoOlWIopGnEW1GIkdsrQAAQIECFAuCIX+AHjjQAHYAR/OAAAAAElFTkSuQmCC">
+			<div class="head__user-setting user">&dArr;</div>
+		</div>
+	</div>
+
+	<div id="main">
+		<div class="main__menu">
+			<ul class="menu-nav">
+				<li class="nav__item">
+					<a class="menu__nav--list" href="#"><i class="icon">&#xe803;</i><span>Моя страница</span></a>
+				</li>
+				<li class="nav__item">
+					<a class="menu__nav--list" href="#"><i class="icon">&#xf1ea;</i><span>Новости</span></a>
+				</li>
+				<li class="nav__item">
+					<a class="menu__nav--list" href="#"><i class="icon">&#xf4ac;</i><span>Сообщения</span></a>
+				</li>
+				<li class="nav__item">
+					<a class="menu__nav--list" href="#"><i class="icon">&#xe804;</i><span>Друзья</span></a>
+				</li>
+				<li class="nav__item">
+					<a class="menu__nav--list" href="#"><i class="icon">&#xe805;</i><span>Группы</span></a>
+				</li>
+				<li class="nav__item">
+					<a class="menu__nav--list" href="#"><i class="icon">&#xe806;</i><span>Фотографии</span></a
+						></li>
+				<li class="nav__item">
+					<a class="menu__nav--list" href="#"><i class="icon">&#xe808;</i><span>Музыка</span></a>
+				</li>
+				<li class="nav__item">
+					<a class="menu__nav--list" href="#"><i class="icon">&#xe807;</i><span>Видио</span></a>
+				</li>
+				<li class="nav__item">
+					<a class="menu__nav--list" href="#"><i class="icon">&#xf11b;</i><span>Игры</span></a>
+				</li>
+				<li class="line-border"><hr></li>
+				<li class="nav__item">
+					<a class="menu__nav--list" href="#"><i class="icon">&#xe809;</i><span>VK Pay</span></a>
+				</li>
+				<li class="line-border"><hr></li>
+				<li class="nav__item">
+					<a class="menu__nav--list" href="#"><i class="icon">&#xf290;</i><span>Товары</span></a>
+				</li>
+			</ul>
+			
+			<div class="menu-mini">
+				<a class="menu-mini__list" href="#">Блог</a>
+				<a class="menu-mini__list" href="#">Разработчикам</a>
+				<a class="menu-mini__list" href="#">Реклама</a>
+				<a class="menu-mini__list" href="#">Ещё</a>
+			</div>
+		</div>
+
+		<div class="main__feed">
+			<div class="main__feed-post">
+				<div class="post__header">
+					<a class="post__header--photo" href="#"><img src="data:image/png;base64,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"></a>
+					<div class="post__header--info">
+						<a class="header__page-link" href="#">Морской кошак "Важак"</a><br>
+						<span>пользователь опубликовал фотографию</span>
+					</div>
+
+					<div class="post__header--data">
+						<span>сегодня 02:33</span>
+					</div>
+				</div>
+
+				<div class="post__feed">
+					<img class="feed-post__image" src="https://pp.userapi.com/c831108/v831108906/1e3dea/EYA2kegrBT4.jpg">
+				</div>
+
+				<div class="post__feedback">
+					<div class="feedback__like">
+						<div class="like feedback__link">
+							<input class="like__checkbox" type="checkbox" name="check-like" id="check-like3">
+							<label class="like__label" for="check-like3">
+								<i class="icon-feedback">&#xe802;</i>
+								<span>422</span>
+							</label>
+						</div>
+						<a class="comments feedback__link" href="#">
+							<i class="icon-feedback">&#xf0e5;</i>
+							
+							<span>32</span>
+						</a>
+						<a class="reblog feedback__link" href="#">
+							<i class="icon-feedback">&#xe801;</i>						
+							<span>55</span>
+						</a>
+
+					</div>
+					<div class="feedback__view">
+						<a class="view feedback__link" href="#">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFdSURBVEhL7VS7TsQwEEyBaICGHvErID6HD0ACiZQ8kpgCm+auQN6TEGl4HNQU1/AFdNcgHV9wEiXs2D4OvEkOCYIobqSRnJ3ZdbLrOJnjf6PoXK6qM7utjO0rbZ+VpldPXiPGGjzB/n2k6cMCF9pVhsbMtxkcw4uckN6M3FysFYYeKwo1EjnIDWWqkeneeqHtUCRrujo5pY0ss0sg1tymG+mzQ9QI5b5C63KZCz2JJGN3gkUgN7Qn/FwDtYJlCt79XJgNXUNLy3KRh3rMHDlqOkTM59GtyONa0D5QmN5mbALRCq/bg1hDrCkXcegOHBjEBhD9hs5v9CJ1O4J21O2uSM1xAN0BD5Ho+GsbzPrMH7cIqBwyDxAaBuo38UPGejpkeyfzoiEDdccURzFYBPiU7cf+2mMK1P1o/NZ9fDL6Deaatjh+H/uQW/ujTdDqVTFBq5fdZ7R2Xc/xh0iSdyIglT8i3qnNAAAAAElFTkSuQmCC">
+							<span>95K</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="post__comment">
+					<div class="post__comment-user">
+						<div class="comment-user__photo"><a href="#"><img src="https://pp.userapi.com/c831108/v831108906/1e3dea/EYA2kegrBT4.jpg"></a></div>
+						<div class="comment-user__info">
+							<a class="comment-user__box comment-user__name" href="#">Lila Kila</a>
+							<a class="comment-user__box comment-user__comment" href="#">Hola amigo la Espana</a>
+							<a class="comment-user__data" href="#">сегодня 14:50</a>
+							<a class="comment-user__reply" href="#">Ответить</a>
+						</div>
+					</div>
+					<div class="post__comment-add">
+						<a class="comment-user__add-photo" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPrSURBVGhD7VhNbAxhGF7/Ef8OEkRcOBAcREhcBYmDEOEgcZOIEhEHPTTSQyWCpIcmTRRBgkQn3Z3dYrU1P21VI/vNttWUA3WQIBIUSUsRXc+7/UbYfae7szvT3cM8yZN25v353uf7nw0FCBAggGuoZu/Ce4/6F+XDxu7u2TKsPBDVetZGDCum6tZ31bBSrqiLdxFDVJVcVFRP7I7o1i+2SBeEmKfKQ2uBTDu5uKv1LsdIfOUKK4QRXdyRqScXmBZnuIIKJYSMRduSy2T6yQMab8ssplhimu6X6b2HYg7M5XYdNPwps5Biialay7XVYFkzZDnuoCjKNFWzTiL5q8zGSkHaUDD1WqJmcpMsMTdIBAKbuISlJna3UdopZakTA8qPcknKhajvc2NL92JZrjPg2M8lKDNWyHJ5VFenpnpxwNlMz21DvEHnDHH2Qol8DbJkHnS6coFuiEZeqoaojLQn11DHyNQhuobAvhP2K7D/yIxzQ3TObZmWR1FCcNeKaOK4ogzMlOlC8fiLWWpHYkW4tW+JfJVGk55ciWKa2Tx50Dch2P/fQ8RmymGa5nT0+BG8e4y/v//6YJFSAWFNbCS/VCo1Be9rbLsb+iIESUeihthC8U3tPavx/IzzswlBYxBZR4IpBs/1nN9E9GdEcHBSbMxMrsLzxyy7MxUaFRIEMa52Sh+EiEFaE+licowER8SconZxAd3F2Z3ouRAkrKI41RSHOXsuYiSGqE3KgVyvOR+OngsJm4l1FIfEnZw9L+qJQ+M5rDrWztBTIbRo6VYqd6m/u5N7isvUNvLlfTXyVgi2XIoJd4ilnD1foqhmyqOa1h7OztFjIWKYYuh7gbO7oEJ5sOAPMjaWngohxuNP5lMc/nez7f5P3To7nkOcZu0MPRdifxtgfl/n7HlRT2xN5zCs+6ydoedC0Js3KC6mJTcUtOB1q4vi6Yc9FDfK+jD0QYj4SdcSisWV/Tzr40AUM0IdQLHohHOcjxO9F0LUxQP6PE5/5+viJuuTQRQyTKc5tam2i/UYmW+cnxP9EQIi8UWKlzfaCqyZD5k+NuHbaY8EXe8xGoOc30T0TQgRU+uq/S0S7eqah+cDEFSPRRxD79+CT419SybQrQDvCvqVxlchaerieVSz9tLIyJRZoHMnvZ5cTqd/6b8QSTT0FsVeChvihGok9tF9ClOoEiPUgr9FfeYScwppbe2bwwWWHbGpyJKdAccvWYFlR3FBlusMOCrZgeXG5DZZrjNoN8EcHOETlJ60zmSpuRHWxHYEFX4R9I9tdJ2RZeYHCggb1jGMzjUkoOlWIopGnEW1GIkdsrQAAQIECFAuCIX+AHjjQAHYAR/OAAAAAElFTkSuQmCC"></a>
+						<input class="comment-user__text" type="text" name="type-text" placeholder="Написать комментарий...">
+						<div class="icon-panel">
+							<div class="icon icon__file"></div>
+							<div class="icon icon__photo"></div>
+							<div class="icon icon__smile"></div>
+							
+						</div>
+						<button class="comment-user__button"></button>
+					</div>
+				</div>
+			</div>
+			<div class="main__feed-post">
+				
+				<div class="post__header">
+					<a class="post__header--photo" href="#"><img src="data:image/png;base64,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"></a>
+					<div class="post__header--info">
+						<a class="header__page-link" href="#">Морской кошак "Важак"</a><br>
+						<span>пользователь опубликовал фотографию</span>
+					</div>
+
+					<div class="post__header--data">
+						<span>сегодня 02:33</span>
+					</div>
+				</div>
+
+				<div class="post__feed">
+					<img class="feed-post__image" src="https://pp.userapi.com/c851220/v851220841/563da/TTwWJ_1m0wY.jpg">
+				</div>
+
+				<div class="post__feedback">
+					<div class="feedback__like">
+						<div class="like feedback__link">
+							<input class="like__checkbox" type="checkbox" name="check-like" id="check-like1">
+							<label class="like__label" for="check-like1">
+								<i class="icon-feedback">&#xe802;</i>
+								<span>422</span>
+							</label>
+						</div>
+						<a class="comments feedback__link" href="#">
+							<i class="icon-feedback">&#xf0e5;</i>
+							
+							<span>32</span>
+						</a>
+						<a class="reblog feedback__link" href="#">
+							<i class="icon-feedback">&#xe801;</i>						
+							<span>55</span>
+						</a>
+
+					</div>
+					<div class="feedback__view">
+						<a class="view feedback__link" href="#">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFdSURBVEhL7VS7TsQwEEyBaICGHvErID6HD0ACiZQ8kpgCm+auQN6TEGl4HNQU1/AFdNcgHV9wEiXs2D4OvEkOCYIobqSRnJ3ZdbLrOJnjf6PoXK6qM7utjO0rbZ+VpldPXiPGGjzB/n2k6cMCF9pVhsbMtxkcw4uckN6M3FysFYYeKwo1EjnIDWWqkeneeqHtUCRrujo5pY0ss0sg1tymG+mzQ9QI5b5C63KZCz2JJGN3gkUgN7Qn/FwDtYJlCt79XJgNXUNLy3KRh3rMHDlqOkTM59GtyONa0D5QmN5mbALRCq/bg1hDrCkXcegOHBjEBhD9hs5v9CJ1O4J21O2uSM1xAN0BD5Ho+GsbzPrMH7cIqBwyDxAaBuo38UPGejpkeyfzoiEDdccURzFYBPiU7cf+2mMK1P1o/NZ9fDL6Deaatjh+H/uQW/ujTdDqVTFBq5fdZ7R2Xc/xh0iSdyIglT8i3qnNAAAAAElFTkSuQmCC">
+							<span>95K</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="post__comment">
+					<div class="post__comment-user">
+						<div class="comment-user__photo"><a href="#"><img src="https://pp.userapi.com/c831108/v831108906/1e3dea/EYA2kegrBT4.jpg"></a></div>
+						<div class="comment-user__info">
+							<a class="comment-user__box comment-user__name" href="#">Lila Kila</a>
+							<a class="comment-user__box comment-user__comment" href="#">Hola amigo la Espana</a>
+							<a class="comment-user__data" href="#">сегодня 14:50</a>
+							<a class="comment-user__reply" href="#">Ответить</a>
+						</div>
+					</div>
+					<div class="post__comment-add">
+						<a class="comment-user__add-photo" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPrSURBVGhD7VhNbAxhGF7/Ef8OEkRcOBAcREhcBYmDEOEgcZOIEhEHPTTSQyWCpIcmTRRBgkQn3Z3dYrU1P21VI/vNttWUA3WQIBIUSUsRXc+7/UbYfae7szvT3cM8yZN25v353uf7nw0FCBAggGuoZu/Ce4/6F+XDxu7u2TKsPBDVetZGDCum6tZ31bBSrqiLdxFDVJVcVFRP7I7o1i+2SBeEmKfKQ2uBTDu5uKv1LsdIfOUKK4QRXdyRqScXmBZnuIIKJYSMRduSy2T6yQMab8ssplhimu6X6b2HYg7M5XYdNPwps5Biialay7XVYFkzZDnuoCjKNFWzTiL5q8zGSkHaUDD1WqJmcpMsMTdIBAKbuISlJna3UdopZakTA8qPcknKhajvc2NL92JZrjPg2M8lKDNWyHJ5VFenpnpxwNlMz21DvEHnDHH2Qol8DbJkHnS6coFuiEZeqoaojLQn11DHyNQhuobAvhP2K7D/yIxzQ3TObZmWR1FCcNeKaOK4ogzMlOlC8fiLWWpHYkW4tW+JfJVGk55ciWKa2Tx50Dch2P/fQ8RmymGa5nT0+BG8e4y/v//6YJFSAWFNbCS/VCo1Be9rbLsb+iIESUeihthC8U3tPavx/IzzswlBYxBZR4IpBs/1nN9E9GdEcHBSbMxMrsLzxyy7MxUaFRIEMa52Sh+EiEFaE+licowER8SconZxAd3F2Z3ouRAkrKI41RSHOXsuYiSGqE3KgVyvOR+OngsJm4l1FIfEnZw9L+qJQ+M5rDrWztBTIbRo6VYqd6m/u5N7isvUNvLlfTXyVgi2XIoJd4ilnD1foqhmyqOa1h7OztFjIWKYYuh7gbO7oEJ5sOAPMjaWngohxuNP5lMc/nez7f5P3To7nkOcZu0MPRdifxtgfl/n7HlRT2xN5zCs+6ydoedC0Js3KC6mJTcUtOB1q4vi6Yc9FDfK+jD0QYj4SdcSisWV/Tzr40AUM0IdQLHohHOcjxO9F0LUxQP6PE5/5+viJuuTQRQyTKc5tam2i/UYmW+cnxP9EQIi8UWKlzfaCqyZD5k+NuHbaY8EXe8xGoOc30T0TQgRU+uq/S0S7eqah+cDEFSPRRxD79+CT419SybQrQDvCvqVxlchaerieVSz9tLIyJRZoHMnvZ5cTqd/6b8QSTT0FsVeChvihGok9tF9ClOoEiPUgr9FfeYScwppbe2bwwWWHbGpyJKdAccvWYFlR3FBlusMOCrZgeXG5DZZrjNoN8EcHOETlJ60zmSpuRHWxHYEFX4R9I9tdJ2RZeYHCggb1jGMzjUkoOlWIopGnEW1GIkdsrQAAQIECFAuCIX+AHjjQAHYAR/OAAAAAElFTkSuQmCC"></a>
+						<input class="comment-user__text" type="text" name="type-text" placeholder="Написать комментарий...">
+						<div class="icon-panel">
+							<div class="icon icon__file"></div>
+							<div class="icon icon__photo"></div>
+							<div class="icon icon__smile"></div>
+							
+						</div>
+						<button class="comment-user__button"></button>
+					</div>
+				</div>
+			</div>
+			<div class="main__feed-post">
+				
+				<div class="post__header">
+					<a class="post__header--photo" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAa5SURBVGhD7ZgLTBN3HMfJHtkC9bGpc2a6DV2iCCKuFGx5lAJtgZYiDCjIW5gMiGxz0eh8EN9z02kWs8wxp8xHUAG10hZEWhniW+eGougyxQeg6FAmPqLw2++uf7peeyTg7pYs4Zt8c727//0+v+//f9eX04D+z5LJZBrykhcVFBS8EBwcHE52+RMGMSBoGtllSCqVDsdzcThmHW4rcXsC3YivL+D2OG4rcLsGt9E4dii5jCE8n4Pni8guf0JIPboN/RY55CSXy11x/1v0IzT00R3orwICAkaRMtRETMAgD/B4NTnEnxB0izRyTK1WO4eEhCTh67/IsX4b693BbaS/v/8I3F4mx84THD+Ki4t7ESFdPU2gr9q8/jfuRl+x2b9NkPwIASNtYLxaKBS+TLDcCwGe9kC+bPvscC58HkLZoHwYb2EhwXIvDKJlg/LhoKCgEILlXjhLGWxQPoyTpiZY7oWAPHsgX8ZJm06w3AuLz2OD8uQsguVetkGiVDJY+okYYqOC7Bvot7XRUrpWRJjMegxZOQTLvXqCqMNlcE3vAXBiArSbJkJ2SgCjsf740yw/6Kx1o2s1lEwChdxy/D8Jsn21Nw3ucWulO65Q/1cmIUYKHTUTGbW+WehLn+M9SGiIDNrN7tB20B3OFk+Gx3WW2Ty82QvfadgbZrM8NBjqd02mr+2snUjXolb3arkHfZ73IPkz/GDLShE2bbmfEz+QwuW9lttswyLLbPbF21aL6Gvqd3lCjMaymkqFDErXCSE5LpDfIPghlT8dG7dvimrkyn4PeHLEDWYkBjqctzc1GV3H3eA8PhPhyn8ecMrUqlK3HAbh7+0XQZm2UFtT7zw3DO706ijkzOZsTb1RtFR6wO/7JkFkRO/PFQbh75eo/VcUlUoFiQkJoNXGg0KhAGq1ble5w+6vvRlN2bryuyn0c0CtohKvSdBq6Rrh4eGMcRgkmGC5F95aKltYbk4OtLfdon3r5nXYWrQFUhNC6UZXzJ7KaIxy4VIfuFDqCckJEVCyqxjaWprpa/+83QrJSUn2430IlnthEF87GByrq7WGoVxjqgaNOhR+WuUNc7L9rOMWz5LAD8tEoFYp4czJ44xrjOX7GTUp44qMI1juhbfPGHtgTEwMVFUY6RXpaWxT4feMMbbevbPYOq7lehOU79sL+JPZYVxYWNgrBMu9pFLpSzhTz+yhvTkyMhLS0tLA1dUVxGIx65he3EaQ/AmD3GQBszo5OdkaxM3NjXVML/6F4PhTVGxcY2xBEaRsrof0HX/Q2/hVZaDJXQJyhdLaDHW7ZGRkWINQlkgk1vOKsAiIyv8CtF/qIHVLA6QXN0HKpl8hdsHG7pg47VGC408bduruZ+kfAptnljbDxiUJEK0KoVfDPgi1KvGaEChclQGZe+6w1qBcWLStmeD4U8nKOa1scMp1hrUAxki4VxYJ8/PiGUHGjh0L6RpveKhT0WMMhk2sNSjrFmTy+78WpSrV+Msf6jsd4KWGHXSDtq5ePw3SUqaDp8cEMK8NdTi/1aBzqJNXfhdM0pF1BMefzD6Cpi9KDjPghfpK6DZqHBqlfLdEAx1latZzT43RsEZ/glFrw/a9YBYJThMcfzL7uNzbszDbCl6h/w2eGGNZG+2LHxrjYbH+krWeIS8KkNFIcPwJZ+uZWfIaLNA1wmxDC7QbUh2a69qvhtblAXAuyQuufS6BpnliaEibAm1rg6Db4Lg6LcZsmKW/CyvKTmIIAbUiNwmOH5mlTq/SILRubgo0Guc6NEWFOCYbD8bRo2lXuo6BinfGWPfPqN2hW+8Y5rR+GRg+iiBBXO4TJD8yCwXDe4JQbl6OP3ntGqL8dI8KzuNq2AY44Po2XMwSQpeO/Xm5Ot/TWpcyQfIjs++Qd21hNeLBcG9jIGtjlB9tV9K31o1FfvB4ZzjrGMpt68VwyHcQI4hZOkJAsNzr0FSXSQwYujZwKDwqDmZtsC/u+DEQaiRDGDVpi5zfJFjuZRIK/ByA6Iv5owAOPkcYUxCcTR7mUI/21MHvESz3MomclWzQhtw3APA3OJj92Ru2dwU+JzVi+s+HM4mvO9SjLXL2IljuVe0tiGGD0kGwKdp17wMcULIHoFwlBzjiZR3faxBfgT/Bcq9qH+dUNigjSI+PTMFZl+DtI7X4Z1yBo5b/sWzdWxCTzyAVwXIvk7cglw3KGqSP7jWIt4uWYLkXfuLOY4PyEsRHkEmw3As/cVewQXkJ4uvyMcFyL5PI5TNclVP2PjdzxKUH+8Z1Po9PxQ9rYKtpFg1KJ9gBDWhAnMjJ6W9gw9qDRJdC9gAAAABJRU5ErkJggg=="></a>
+					<div class="post__header--info">
+						<a class="header__page-link" href="">Морской кошак "Важак"</a><br>
+						<span>пользователь опубликовал фотографию</span>
+					</div>
+
+					<div class="post__header--data">
+						<span>сегодня 02:33</span>
+					</div>
+				</div>
+
+				<div class="post__feed">
+					<img class="feed-post__image" src="https://pp.userapi.com/c850228/v850228289/7cef6/S7GLqtkcRsE.jpg">
+				</div>
+
+				<div class="post__feedback">
+					<div class="feedback__like">
+						<div class="like feedback__link">
+							<input class="like__checkbox" type="checkbox" name="check-like" id="check-like2">
+							<label class="like__label" for="check-like2">
+								<i class="icon-feedback">&#xe802;</i>
+								<span>422</span>
+							</label>
+						</div>
+						<a class="comments feedback__link" href="#">
+							<i class="icon-feedback">&#xf0e5;</i>
+							
+							<span>32</span>
+						</a>
+						<a class="reblog feedback__link" href="#">
+							<i class="icon-feedback">&#xe801;</i>						
+							<span>55</span>
+						</a>
+
+					</div>
+					<div class="feedback__view">
+						<a class="view feedback__link" href="#">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFdSURBVEhL7VS7TsQwEEyBaICGHvErID6HD0ACiZQ8kpgCm+auQN6TEGl4HNQU1/AFdNcgHV9wEiXs2D4OvEkOCYIobqSRnJ3ZdbLrOJnjf6PoXK6qM7utjO0rbZ+VpldPXiPGGjzB/n2k6cMCF9pVhsbMtxkcw4uckN6M3FysFYYeKwo1EjnIDWWqkeneeqHtUCRrujo5pY0ss0sg1tymG+mzQ9QI5b5C63KZCz2JJGN3gkUgN7Qn/FwDtYJlCt79XJgNXUNLy3KRh3rMHDlqOkTM59GtyONa0D5QmN5mbALRCq/bg1hDrCkXcegOHBjEBhD9hs5v9CJ1O4J21O2uSM1xAN0BD5Ho+GsbzPrMH7cIqBwyDxAaBuo38UPGejpkeyfzoiEDdccURzFYBPiU7cf+2mMK1P1o/NZ9fDL6Deaatjh+H/uQW/ujTdDqVTFBq5fdZ7R2Xc/xh0iSdyIglT8i3qnNAAAAAElFTkSuQmCC">
+							<span>95K</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="post__comment">
+					<div class="post__comment-user">
+						<div class="comment-user__photo"><a href="#"><img src="https://pp.userapi.com/c831108/v831108906/1e3dea/EYA2kegrBT4.jpg"></a></div>
+						<div class="comment-user__info">
+							<a class="comment-user__box comment-user__name" href="#">Lila Kila</a>
+							<a class="comment-user__box comment-user__comment" href="#">Hola amigo la Espana</a>
+							<a class="comment-user__data" href="#">сегодня 14:50</a>
+							<a class="comment-user__reply" href="#">Ответить</a>
+						</div>
+					</div>
+					<div class="post__comment-add">
+						<a class="comment-user__add-photo" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPrSURBVGhD7VhNbAxhGF7/Ef8OEkRcOBAcREhcBYmDEOEgcZOIEhEHPTTSQyWCpIcmTRRBgkQn3Z3dYrU1P21VI/vNttWUA3WQIBIUSUsRXc+7/UbYfae7szvT3cM8yZN25v353uf7nw0FCBAggGuoZu/Ce4/6F+XDxu7u2TKsPBDVetZGDCum6tZ31bBSrqiLdxFDVJVcVFRP7I7o1i+2SBeEmKfKQ2uBTDu5uKv1LsdIfOUKK4QRXdyRqScXmBZnuIIKJYSMRduSy2T6yQMab8ssplhimu6X6b2HYg7M5XYdNPwps5Biialay7XVYFkzZDnuoCjKNFWzTiL5q8zGSkHaUDD1WqJmcpMsMTdIBAKbuISlJna3UdopZakTA8qPcknKhajvc2NL92JZrjPg2M8lKDNWyHJ5VFenpnpxwNlMz21DvEHnDHH2Qol8DbJkHnS6coFuiEZeqoaojLQn11DHyNQhuobAvhP2K7D/yIxzQ3TObZmWR1FCcNeKaOK4ogzMlOlC8fiLWWpHYkW4tW+JfJVGk55ciWKa2Tx50Dch2P/fQ8RmymGa5nT0+BG8e4y/v//6YJFSAWFNbCS/VCo1Be9rbLsb+iIESUeihthC8U3tPavx/IzzswlBYxBZR4IpBs/1nN9E9GdEcHBSbMxMrsLzxyy7MxUaFRIEMa52Sh+EiEFaE+licowER8SconZxAd3F2Z3ouRAkrKI41RSHOXsuYiSGqE3KgVyvOR+OngsJm4l1FIfEnZw9L+qJQ+M5rDrWztBTIbRo6VYqd6m/u5N7isvUNvLlfTXyVgi2XIoJd4ilnD1foqhmyqOa1h7OztFjIWKYYuh7gbO7oEJ5sOAPMjaWngohxuNP5lMc/nez7f5P3To7nkOcZu0MPRdifxtgfl/n7HlRT2xN5zCs+6ydoedC0Js3KC6mJTcUtOB1q4vi6Yc9FDfK+jD0QYj4SdcSisWV/Tzr40AUM0IdQLHohHOcjxO9F0LUxQP6PE5/5+viJuuTQRQyTKc5tam2i/UYmW+cnxP9EQIi8UWKlzfaCqyZD5k+NuHbaY8EXe8xGoOc30T0TQgRU+uq/S0S7eqah+cDEFSPRRxD79+CT419SybQrQDvCvqVxlchaerieVSz9tLIyJRZoHMnvZ5cTqd/6b8QSTT0FsVeChvihGok9tF9ClOoEiPUgr9FfeYScwppbe2bwwWWHbGpyJKdAccvWYFlR3FBlusMOCrZgeXG5DZZrjNoN8EcHOETlJ60zmSpuRHWxHYEFX4R9I9tdJ2RZeYHCggb1jGMzjUkoOlWIopGnEW1GIkdsrQAAQIECFAuCIX+AHjjQAHYAR/OAAAAAElFTkSuQmCC"></a>
+						<input class="comment-user__text" type="text" name="type-text" placeholder="Написать комментарий...">
+						<div class="icon-panel">
+							<div class="icon icon__file"></div>
+							<div class="icon icon__photo"></div>
+							<div class="icon icon__smile"></div>
+							
+						</div>
+						<button class="comment-user__button"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		</div>
+
+		<div class="main__nav">
+			<ul class="navbar__list">
+			    <li class="navbar__list-item">
+			    <span class="item__select">
+			    	<a class="list-item__select" href="#">Новости</a>
+			    	<span class="icon-bar">
+				    	<a class="list-item__icon" href="#"><i class="icon-news">&#xf0b0;</i></a>
+				    	<a class="list-item__icon" href="#"><i class="icon-news">&#xe800;</i></a>
+				    </span>
+			    </span>
+			      <ul class="sub-menu">
+			        <li class="navbar__list-item">
+			          <a class="sub__list-item" href="#">Фотографии</a>
+			        </li>
+			        <li class="navbar__list-item">
+			          <a class="sub__list-item" href="#">Видеозаписи</a>
+			        </li>
+			        <li class="navbar__list-item">
+			          <a class="sub__list-item" href="#">Понравилось</a>
+			        </li>
+			        <li class="navbar__list-item">
+			          <a class="sub__list-item" href="#">Подкасты</a>
+			        </li>
+			      </ul>
+			    </li>
+			    <li class="navbar__list-item">
+			      <a class="list-item" href="#">Рекомендации</a>
+			    </li>
+			    <li class="navbar__list-item">
+			      <a class="list-item" href="#">Поиск</a>
+			    </li>
+			    <li>
+			      <hr class="item-line">
+			    </li>
+			    <li class="navbar__list-item">
+			      <a class="list-item" href="#">Обновления</a>
+			    </li>
+			    <li class="navbar__list-item">
+			      <a class="list-item" href="#">Комментарии</a>
+			    </li>
+			  </ul>
+			</div>
+
+			<div class="switch-news">
+				<div class="switch__line">
+					<input class="switch-news__input" id="switch" type="checkbox" name="check">
+					<label class="switch-news__name" for="switch">
+				    	<img class="switch-news__image" src="data:image/png;base64,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">
+				    <span class="switch-news__name--top">Сначало интересные</span>	
+				</div>
+			</div>
+</body>
+</html>
