@@ -43,3 +43,9 @@
  [Задание 3. Чекбокс](https://github.com/AdukarIT/ButkevichNO/tree/master/Checkbox)
 
  [Задание 4. Header магазина](https://github.com/AdukarIT/ButkevichNO/tree/master/header%20menu)
+
+##  CSS. Flexbox
+
+ [Задание 1. Header для лэндинга курсов подготовки к ЦТ от Адукар](https://github.com/AdukarIT/ButkevichNO/tree/master/header%20adukar)
+
+ [Задание 2. Сверстать макет для страницы новостей ВКонтакте](https://github.com/AdukarIT/ButkevichNO/tree/master/feed%20vk)
