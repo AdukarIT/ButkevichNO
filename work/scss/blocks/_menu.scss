@@ -1,0 +1,30 @@
+.menu {
+    width: $width-block;
+    height: 3.5em;
+    background-color: #b271a7;
+    font-family: $font-text;
+    
+    .menu__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .list__item{
+          margin-top: 1.3em;
+          cursor: pointer;
+          
+          a {
+            padding: .6em 1.5em;
+            color: #000;
+            
+            &:hover {
+            background-color: #a44;
+            color: #fff;
+            }
+          }
+        }
+      }
+    }

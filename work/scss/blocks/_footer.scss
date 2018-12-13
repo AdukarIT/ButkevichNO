@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: $width-block;
+    font-family: $font-text;
+    min-height: 4em;
+    background-color: #559933;
+    
+    .footer__contacts, .footer__address {
+      @include footer_block();
+    }
+  }

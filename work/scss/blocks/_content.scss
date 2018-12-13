@@ -1,0 +1,14 @@
+.main {
+    width: $width-block;
+    height: 26em;
+    font-family: $font-text;
+    background-color: #b09494;
+    
+    .main__services {
+        @include main_block();
+    }
+    
+    .main__devices {
+        @include main_block();
+    }
+  }
