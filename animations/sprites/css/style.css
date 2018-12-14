@@ -1,0 +1,49 @@
+.sprites {
+	overflow: hidden;
+	width: 66px;
+	height: 135px;
+}
+
+.sprites__frame {
+	width: 462px;
+	height: 135px;
+	background: url('../images/sprites.jpg') no-repeat;
+}
+
+.sprites__frame:hover {
+	animation: frames 2.1s steps(6);
+}
+
+@keyframes frames {
+	0% {
+		margin-left: 0px;
+	}
+	
+	15% {
+		margin-left: -66px;
+	}
+
+	28% {
+		margin-left: -132px;
+	}
+
+	42% {
+		margin-left: -198px;
+	}
+
+	56% {
+		margin-left: -264px;
+	}
+
+	70% {
+		margin-left: -330px;
+	}
+
+	85% {
+		margin-left: -396px;
+	}*/
+
+	100% {
+		margin-left: -462px;
+	}
+}

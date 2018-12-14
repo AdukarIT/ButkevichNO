@@ -1,0 +1,25 @@
+.square {
+  width: 40em;
+  height: 20em;
+  border: 1px solid #000; 
+}
+
+.square__check {
+  display: none;
+}
+
+.square__check:checked + .square__ball {
+  transform: translateX(32.1em);
+}
+
+.square__ball {
+  display: inline-block;
+  width: 8em;
+  height: 8em;
+  margin-top: 15%;
+  border-radius: 50%;
+  background: url('../images/ball.png');
+  background-size: 100% auto;
+  transition: all 1s ease-out;
+  cursor: pointer;
+}

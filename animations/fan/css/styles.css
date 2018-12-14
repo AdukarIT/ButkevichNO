@@ -1,0 +1,13 @@
+.fan {
+	display: inline-block;
+	margin: 10% 0 0 40%;
+	width: 13em;
+	height: 13em;
+	background: url('../images/fan.png') no-repeat;
+	background-size: 13em auto;
+	transition: all 5s ease-out;
+}
+
+.fan:hover {
+	transform: rotate(1080deg);
+}
