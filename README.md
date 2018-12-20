@@ -58,6 +58,6 @@
 
  [Задание 3. Спрайты](https://github.com/AdukarIT/ButkevichNO/tree/master/animations/sprites)
 
-## 17. node.js + npm + sass
+## node.js + npm + sass
  
  [SCSS](https://github.com/AdukarIT/ButkevichNO/tree/master/designClub)
