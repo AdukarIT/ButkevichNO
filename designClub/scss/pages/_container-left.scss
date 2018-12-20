@@ -1,0 +1,10 @@
+.container-left {
+    margin: 1.8em 0 1.8em 2em;
+    
+    .container-left__info {
+    	background: url('../image/BG_elem_left.png') no-repeat;
+    	background-size: 100%;
+    	margin-bottom: $margin-bottom*4.5;
+		@include container__info();
+    }
+}

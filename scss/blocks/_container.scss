@@ -1,0 +1,20 @@
+@import '_container-left';
+@import '_container-midle';
+@import '_container-right';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 93%;
+  margin: 2% 3%;
+  background: linear-gradient(to bottom left, #e8e8eb, #f5f6f6);
+  border-radius: 2em;
+  border: 1px solid #e0e0e0;
+  box-shadow: -7px 7px 25px 0px rgba(0,0,0,0.37);
+  
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}

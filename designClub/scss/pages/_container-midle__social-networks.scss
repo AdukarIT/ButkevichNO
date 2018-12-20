@@ -1,0 +1,26 @@
+.container-midle__social-networks {
+      display: inline-block;
+      margin-top: 1em;
+      width: 100%;
+      font-size: 4em;
+      
+      .social-networks__link {
+          font-size: .6em;
+          display: inline-block;
+          transition: all .3s linear;
+          text-decoration: none;
+          color: #000;
+          padding: 0 .5em;
+          
+          &:hover {
+            transform: scale(1.5);
+            color: rgba(0, 0, 0, .6); 
+          }
+          
+          .demo-icon {
+            font-family: $font-icon;
+            font-size: $font-size*1.2;
+            font-style: normal;
+          }
+      }
+    }

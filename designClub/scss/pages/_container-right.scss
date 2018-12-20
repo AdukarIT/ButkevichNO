@@ -1,0 +1,10 @@
+.container-right {
+    margin: 1.8em 2em 1.8em 0;
+    
+    .container-right__info {
+    	background: url('../image/BG_elem_right.png') no-repeat;
+    	background-size: 115%;
+    	margin-bottom: $margin-bottom*4.5;
+    	@include container__info();
+    }
+  }

@@ -1,0 +1,17 @@
+.mobile__container-midle__button {
+        margin-top: 2em;
+        padding-top: 1.25em;
+        width: 12em;
+        height: 3.5em;
+        background-color: #000;
+        border-radius: .3em;
+        color: #eff0f1;
+        font-size: $font-size*2;
+        text-decoration: none;
+        outline: none;
+        transition: 1s ease-out;
+
+        &:hover {
+          background: rgba(0, 0, 0, .6);
+        }
+      }

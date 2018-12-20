@@ -1,0 +1,60 @@
+@import '_fonts';
+@import '_reset';
+
+@mixin container__info() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 225px;
+  height: 200px;
+  border: 1px solid red;
+  text-align: center;
+  
+  @media (max-width: 450px) {
+    width: 70%;
+    height: 7em;
+  }
+  
+  .info__image {
+    width: 32px;
+    height: 32px;
+    border: 1px solid red;
+    
+    @media (max-width: 450px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
+  .info__name {
+    margin: .2em 0;
+    font-weight: 400;
+    font-size: 1.25em;
+    color: #383838;
+    
+    @media (max-width: 450px) {
+      width: 70%;
+      margin: .2em 15%;
+      border: 1px solid red;
+      font-size: 1em;
+    }
+  }
+  
+  .info__text {
+    text-align: center;
+    font-size: .9em;
+    
+    @media (max-width: 450px) {
+      width: 90%;
+      margin: 0 5%;
+      border: 1px solid red;
+      text-align: center;
+      font-size: .8em;
+    }
+    
+    .info__link {
+      color: #000;
+    }
+  }
+}

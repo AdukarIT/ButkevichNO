@@ -1,0 +1,13 @@
+@import '_mobile-container-column-line-left';
+@import '_mobile-container-column-line-right';
+@import '_mobile-container-button-join.scss';
+
+
+.mobile-container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 5em 0 0 0;
+}

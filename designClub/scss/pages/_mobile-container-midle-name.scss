@@ -1,0 +1,22 @@
+.mobile__container-midle__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+               
+  .mobile__container-midle__name-design {
+    width: 100%;
+    letter-spacing: -3.5px; 
+    font-size: $font-size*5;
+    font-family: $font-logo;
+  }
+        
+  .mobile__container-midle__name-club {
+    width: 100%;
+    font-size: $font-size*3;
+    font-family: $font-logo;
+    padding-left: 0.5em;
+    letter-spacing: .5em;
+  }
+}

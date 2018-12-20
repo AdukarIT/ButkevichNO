@@ -1,0 +1,545 @@
+@import 'https://fonts.googleapis.com/css?family=Orbitron';
+@import 'https://fonts.googleapis.com/css?family=Orbitron';
+@font-face {
+  font-family: "icon";
+  src: url("../font/fontello.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icon";
+  src: url("../font/fontello.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 93%;
+  margin: 2% 3%;
+  background: linear-gradient(to bottom left, #e8e8eb, #f5f6f6);
+  border-radius: 2em;
+  border: 1px solid #e0e0e0;
+  box-shadow: -7px 7px 25px 0px rgba(0, 0, 0, 0.37);
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-block;
+  }
+  .mobile .mobile__container-midle__name {
+    font-size: 1.5em;
+  }
+  .mobile .mobile__container-midle__text {
+    font-size: 2.2em;
+    width: 50%;
+  }
+  .mobile .mobile__container-midle__button {
+    font-size: 2.5em;
+  }
+  .mobile .mobile__container-midle__social-networks {
+    width: 80%;
+    font-size: 6em;
+  }
+  .mobile .demo-icon {
+    font-size: 3.5em;
+  }
+  .mobile .info__name {
+    font-size: 20em;
+  }
+  .mobile .info__text {
+    font-size: 2.5em;
+  }
+}
+.container-left {
+  margin: 1.8em 0 1.8em 2em;
+}
+.container-left .container-left__info {
+  background: url("../image/BG_elem_left.png") no-repeat;
+  background-size: 100%;
+  margin-bottom: 4.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 225px;
+  height: 220px;
+  text-align: center;
+  transition: ease-out 1s;
+  font-size: 0.9em;
+  color: #646464;
+}
+.container-left .container-left__info:last-child {
+  margin-bottom: 0em;
+}
+.container-left .container-left__info:hover {
+  cursor: pointer;
+  color: #111;
+}
+.container-left .container-left__info .info__image {
+  margin: 0 30%;
+}
+.container-left .container-left__info .info__image .demo-icon {
+  font-size: 1.5em;
+  font-family: "icon";
+  font-style: normal;
+}
+.container-left .container-left__info .info__name {
+  margin: 0.5em 0;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #383838;
+}
+.container-left .container-left__info .info__text {
+  text-align: center;
+  font-size: 0.9em;
+  width: 80%;
+  margin: 0 10%;
+}
+.container-left .container-left__info .info__text .info__link {
+  color: #000;
+}
+
+.container-midle__logo {
+  width: 21.5em;
+  margin-top: 3em;
+}
+
+.container-midle__name-design {
+  font-size: 5.5em;
+  font-family: "Orbitron";
+  letter-spacing: -3.5px;
+}
+
+.container-midle__name-club {
+  font-size: 3.1em;
+  font-family: "Orbitron";
+  letter-spacing: 1.35em;
+  width: 7.3em;
+}
+
+.container-midle__text {
+  font-size: 1em;
+  margin: 0;
+  margin-top: 0px;
+  margin-top: 2em;
+  width: 22em;
+  text-align: center;
+  color: #000;
+}
+
+.container-midle__button {
+  margin-top: 2em;
+  padding: 0.4em 0;
+  width: 14em;
+  height: 2em;
+  background-color: #000;
+  border-radius: 0.3em;
+  color: #eff0f1;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-decoration: none;
+  outline: none;
+  transition: 1s ease-out;
+}
+.container-midle__button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.container-midle__social-networks {
+  display: inline-block;
+  margin-top: 1em;
+  width: 100%;
+  font-size: 4em;
+}
+.container-midle__social-networks .social-networks__link {
+  font-size: 0.6em;
+  display: inline-block;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  color: #000;
+  padding: 0 0.5em;
+}
+.container-midle__social-networks .social-networks__link:hover {
+  transform: scale(1.5);
+  color: rgba(0, 0, 0, 0.6);
+}
+.container-midle__social-networks .social-networks__link .demo-icon {
+  font-family: "icon";
+  font-size: 1.2em;
+  font-style: normal;
+}
+
+.container-midle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  padding: 0 2em;
+}
+
+.container-right {
+  margin: 1.8em 2em 1.8em 0;
+}
+.container-right .container-right__info {
+  background: url("../image/BG_elem_right.png") no-repeat;
+  background-size: 115%;
+  margin-bottom: 4.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 225px;
+  height: 220px;
+  text-align: center;
+  transition: ease-out 1s;
+  font-size: 0.9em;
+  color: #646464;
+}
+.container-right .container-right__info:last-child {
+  margin-bottom: 0em;
+}
+.container-right .container-right__info:hover {
+  cursor: pointer;
+  color: #111;
+}
+.container-right .container-right__info .info__image {
+  margin: 0 30%;
+}
+.container-right .container-right__info .info__image .demo-icon {
+  font-size: 1.5em;
+  font-family: "icon";
+  font-style: normal;
+}
+.container-right .container-right__info .info__name {
+  margin: 0.5em 0;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #383838;
+}
+.container-right .container-right__info .info__text {
+  text-align: center;
+  font-size: 0.9em;
+  width: 80%;
+  margin: 0 10%;
+}
+.container-right .container-right__info .info__text .info__link {
+  color: #000;
+}
+
+.container-midle__button {
+  margin-top: 2em;
+  padding: 0.4em 0;
+  width: 14em;
+  height: 2em;
+  background-color: #000;
+  border-radius: 0.3em;
+  color: #eff0f1;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-decoration: none;
+  outline: none;
+  transition: 1s ease-out;
+}
+.container-midle__button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.container-midle__logo {
+  width: 21.5em;
+  margin-top: 3em;
+}
+
+.container-midle__text {
+  font-size: 1em;
+  margin: 0;
+  margin-top: 0px;
+  margin-top: 2em;
+  width: 22em;
+  text-align: center;
+  color: #000;
+}
+
+.container-midle__name-club {
+  font-size: 3.1em;
+  font-family: "Orbitron";
+  letter-spacing: 1.35em;
+  width: 7.3em;
+}
+
+.container-midle__name-design {
+  font-size: 5.5em;
+  font-family: "Orbitron";
+  letter-spacing: -3.5px;
+}
+
+.container-midle__social-networks {
+  display: inline-block;
+  margin-top: 1em;
+  width: 100%;
+  font-size: 4em;
+}
+.container-midle__social-networks .social-networks__link {
+  font-size: 0.6em;
+  display: inline-block;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  color: #000;
+  padding: 0 0.5em;
+}
+.container-midle__social-networks .social-networks__link:hover {
+  transform: scale(1.5);
+  color: rgba(0, 0, 0, 0.6);
+}
+.container-midle__social-networks .social-networks__link .demo-icon {
+  font-family: "icon";
+  font-size: 1.2em;
+  font-style: normal;
+}
+
+.mobile-container-column__line-left {
+  width: 100%;
+  height: 25em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 4em;
+}
+.mobile-container-column__line-left .mobile-container-column__info {
+  background: url("../image/bg-mobile-left.png") no-repeat right center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 70%;
+  height: 25em;
+  text-align: center;
+  transition: ease-out 1s;
+  color: #646464;
+}
+.mobile-container-column__line-left .mobile-container-column__info:last-child {
+  margin-bottom: 0em;
+}
+.mobile-container-column__line-left .mobile-container-column__info:hover {
+  cursor: pointer;
+  color: #111;
+}
+.mobile-container-column__line-left .mobile-container-column__info .info__image {
+  margin: 0 30%;
+}
+.mobile-container-column__line-left .mobile-container-column__info .info__image .demo-icon {
+  font-family: "icon";
+  font-size: 4em;
+  font-style: normal;
+}
+.mobile-container-column__line-left .mobile-container-column__info .info__name {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+  font-weight: 700;
+  color: #383838;
+}
+.mobile-container-column__line-left .mobile-container-column__info .info__text {
+  text-align: center;
+  font-size: 2em;
+  width: 90%;
+  margin: 0 5%;
+}
+.mobile-container-column__line-left .mobile-container-column__info .info__text .info__link {
+  color: #000;
+}
+
+.mobile-container-column__line-right {
+  width: 100%;
+  height: 25em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 4em;
+}
+.mobile-container-column__line-right .mobile-container-column__info {
+  background: url("../image/bg-mobile-right.png") no-repeat left center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 70%;
+  height: 25em;
+  text-align: center;
+  transition: ease-out 1s;
+  color: #646464;
+}
+.mobile-container-column__line-right .mobile-container-column__info:last-child {
+  margin-bottom: 0em;
+}
+.mobile-container-column__line-right .mobile-container-column__info:hover {
+  cursor: pointer;
+  color: #111;
+}
+.mobile-container-column__line-right .mobile-container-column__info .info__image {
+  margin: 0 30%;
+}
+.mobile-container-column__line-right .mobile-container-column__info .info__image .demo-icon {
+  font-family: "icon";
+  font-size: 4em;
+  font-style: normal;
+}
+.mobile-container-column__line-right .mobile-container-column__info .info__name {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+  font-weight: 700;
+  color: #383838;
+}
+.mobile-container-column__line-right .mobile-container-column__info .info__text {
+  text-align: center;
+  font-size: 2em;
+  width: 90%;
+  margin: 0 5%;
+}
+.mobile-container-column__line-right .mobile-container-column__info .info__text .info__link {
+  color: #000;
+}
+
+.mobile-container__button-join {
+  margin: 1em 0;
+  padding-top: 1em;
+  width: 12em;
+  height: 3em;
+  background-color: #000;
+  border-radius: 0.3em;
+  color: #eff0f1;
+  font-weight: 400;
+  font-size: 2.5em;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  transition: 1s ease-out;
+}
+.mobile-container__button-join:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.mobile-container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 5em 0 0 0;
+}
+
+.mobile__midle--logo {
+  width: 30em;
+  margin-top: 6em;
+}
+
+.mobile__midle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: #000;
+  background-color: #f0f1f2;
+  box-shadow: 0px 9px 20px 2px rgba(0, 0, 0, 0.35);
+}
+
+.mobile__container-midle__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.mobile__container-midle__name .mobile__container-midle__name-design {
+  width: 100%;
+  letter-spacing: -3.5px;
+  font-size: 5em;
+  font-family: "Orbitron";
+}
+.mobile__container-midle__name .mobile__container-midle__name-club {
+  width: 100%;
+  font-size: 3em;
+  font-family: "Orbitron";
+  padding-left: 0.5em;
+  letter-spacing: 0.5em;
+}
+
+.mobile__container-midle__text {
+  font-size: 1.5em;
+  margin-top: 2em;
+  width: 35%;
+  text-align: center;
+  color: #000;
+}
+
+.mobile__container-midle__button {
+  margin-top: 2em;
+  padding-top: 1.25em;
+  width: 12em;
+  height: 3.5em;
+  background-color: #000;
+  border-radius: 0.3em;
+  color: #eff0f1;
+  font-size: 2em;
+  text-decoration: none;
+  outline: none;
+  transition: 1s ease-out;
+}
+.mobile__container-midle__button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.mobile__container-midle__social-networks {
+  display: inline-block;
+  margin: 0.8em 0 0.5em 0;
+  font-size: 4em;
+}
+.mobile__container-midle__social-networks .mobile__social-networks__link {
+  font-size: 0.6em;
+  display: inline-block;
+  transition: all 0.5s linear;
+  text-decoration: none;
+  color: #000;
+  padding: 0 0.5em;
+}
+.mobile__container-midle__social-networks .mobile__social-networks__link:hover {
+  transform: scale(1.5);
+  color: rgba(0, 0, 0, 0.6);
+}
+.mobile__container-midle__social-networks .mobile__social-networks__link .mobile__demo-icon {
+  font-family: "icon";
+  padding: 1em 0.5em;
+  font-size: 1.1em;
+  font-style: normal;
+}
+
+.mobile__midle--logo {
+  width: 30em;
+  margin-top: 6em;
+}
+
+/*# sourceMappingURL=main.css.map */

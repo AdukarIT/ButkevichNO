@@ -1,0 +1,17 @@
+@import '_container-midle__logo';
+@import '_container-midle__name-design';
+@import '_container-midle__name-club';
+@import '_container-midle__text';
+@import '_container-midle__button';
+@import '_container-midle__social-networks';
+
+
+.container-midle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    padding: 0 2em;
+  }

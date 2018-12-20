@@ -1,0 +1,19 @@
+.mobile-container__button-join {
+        margin: 1em 0;
+        padding-top: 1em;
+        width: 12em;
+        height: 3em;
+        background-color: #000;
+        border-radius: .3em;
+        color: #eff0f1;
+        font-weight: 400;
+        font-size: $font-size*2.5;
+        text-decoration: none;
+        text-align: center;
+        outline: none;
+        transition: 1s ease-out;
+
+        &:hover {
+          background: rgba(0, 0, 0, .6);
+        }
+      }
