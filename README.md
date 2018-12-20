@@ -6,9 +6,9 @@
   2. Ответ: http://m.vk.com/
   3. Ответ: google.com/
 
- Задание 2
-  1. http://jsfiddle.net/hqcm86tf/
-  2. http://jsfiddle.net/24j3Lpzd/
+ [Задание 2. Часть 1.](http://jsfiddle.net/hqcm86tf)
+
+ [Задание 2. Часть 2.](http://jsfiddle.net/24j3Lpzd/)
 
 ## Основы HTML
 
@@ -57,3 +57,7 @@
  [Задание 2. Вентилятор](https://github.com/AdukarIT/ButkevichNO/tree/master/animations/fan)
 
  [Задание 3. Спрайты](https://github.com/AdukarIT/ButkevichNO/tree/master/animations/sprites)
+
+## 17. node.js + npm + sass
+ 
+ [SCSS](https://github.com/AdukarIT/ButkevichNO/tree/master/designClub)
