@@ -61,3 +61,9 @@
 ## node.js + npm + sass
  
  [SCSS](https://github.com/AdukarIT/ButkevichNO/tree/master/designClub)
+
+## Итоговая работа по вёрстке
+
+ [Главная страница](https://nikitabutkevich.github.io/public/index.html)
+
+ [Новостной раздел](https://nikitabutkevich.github.io/public/music.html)
