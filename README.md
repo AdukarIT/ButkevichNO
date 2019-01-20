@@ -67,3 +67,7 @@
  [Главная страница](https://nikitabutkevich.github.io/public/index.html)
 
  [Новостной раздел](https://nikitabutkevich.github.io/public/music.html)
+
+## Логические операторы. Условные операторы. Циклы
+ 
+ [Операторы. Циклы](https://github.com/AdukarIT/ButkevichNO/tree/master/js)
