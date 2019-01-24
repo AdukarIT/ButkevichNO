@@ -71,3 +71,7 @@
 ## Логические операторы. Условные операторы. Циклы
  
  [Операторы. Циклы](https://github.com/AdukarIT/ButkevichNO/tree/master/js)
+ 
+## Функции
+ 
+ [Функции](https://github.com/AdukarIT/ButkevichNO/tree/master/js_function)
