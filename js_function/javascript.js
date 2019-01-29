@@ -1,6 +1,6 @@
-//Çàäàíèå ¹1
+//Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ Â¹1
 
-console.log('Çàäàíèå ¹1. Ôóíêöèÿ ñ 3-ìÿ àðãóìåíòàìè');
+console.log('Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ Â¹1. Ã”Ã³Ã­ÃªÃ¶Ã¨Ã¿ Ã± 3-Ã¬Ã¿ Ã Ã°Ã£Ã³Ã¬Ã¥Ã­Ã²Ã Ã¬Ã¨'); // Ð¿Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð¸Ñ‚Ðµ Ð²Ð°ÑˆÑƒ ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÑƒ
 
 var firstNumber = +prompt ('Enter first number', '');
 var secondNumber = +prompt ('Enter second number', '');
@@ -11,19 +11,19 @@ function firstArgument(firstNumber, secondNumber, thirdNumber) {
 		return (thirdNumber);
 	} else if (secondNumber>thirdNumber && thirdNumber>firstNumber) {
 		return (firstNumber);
-	} else if (thirdNumber>firstNumber && firstNumber>secondNumber) {
+	} else if (thirdNumber>firstNumber && firstNumber>secondNumber) { // Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð¸Ð·Ð±Ñ‹Ñ‚Ð¾Ñ‡Ð½Ð°
 		return (secondNumber);
 	}
 }
 
-console.log('Íàèìåíüøåå çíà÷åíèå àðãóìåíòà ' + firstArgument(firstNumber, secondNumber, thirdNumber));
+console.log('ÃÃ Ã¨Ã¬Ã¥Ã­Ã¼Ã¸Ã¥Ã¥ Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã¥ Ã Ã°Ã£Ã³Ã¬Ã¥Ã­Ã²Ã  ' + firstArgument(firstNumber, secondNumber, thirdNumber));
 console.log('  ');
 
 
 
-//Çàäàíèå ¹2
+//Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ Â¹2
 
-console.log('Çàäàíèå ¹2. Ôóíêöèÿ ñ àðãóìåíòàìè ñóòîê, ÷àñîâ è ìèíóò');
+console.log('Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ Â¹2. Ã”Ã³Ã­ÃªÃ¶Ã¨Ã¿ Ã± Ã Ã°Ã£Ã³Ã¬Ã¥Ã­Ã²Ã Ã¬Ã¨ Ã±Ã³Ã²Ã®Ãª, Ã·Ã Ã±Ã®Ã¢ Ã¨ Ã¬Ã¨Ã­Ã³Ã²');
 let day = +prompt ('Enter the day', '');
 let hour = +prompt ('Enter the hour', '');
 let minutes = +prompt ('Enter the minutes', '');
@@ -55,25 +55,25 @@ console.log(secondArgument(day, hour, minutes));
 console.log('  ');
 
 
-//Çàäàíèå ¹3 
+//Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ Â¹3 
 
-console.log('Çàäàíèå ¹3. Ðåêóðñèâíàÿ ôóíêöèÿ äëÿ ïîäñ÷¸òà ôàêòîðèàëà');
+console.log('Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ Â¹3. ÃÃ¥ÃªÃ³Ã°Ã±Ã¨Ã¢Ã­Ã Ã¿ Ã´Ã³Ã­ÃªÃ¶Ã¨Ã¿ Ã¤Ã«Ã¿ Ã¯Ã®Ã¤Ã±Ã·Â¸Ã²Ã  Ã´Ã ÃªÃ²Ã®Ã°Ã¨Ã Ã«Ã ');
 
 let numb = +prompt ('Enter the number', '');
 
 function fact(numb){
 	if (numb == 1 || numb == 0) 
 		return 1;
-		else return numb * fact(numb-1);		
+		else return numb * fact(numb-1); // ÑÐ»ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð·Ð° Ð¾Ñ‚ÑÑ‚ÑƒÐ¿Ð°Ð¼Ð¸ Ð¸ Ñ‚ÑƒÑ‚ Ð¸Ð·Ð±Ñ‹Ñ‚Ð¾Ñ‡ÐµÐ½ else		
 	}
 
 console.log(fact(numb));
 console.log('  ');
 
 
-//Çàäàíèå ¹4
+//Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ Â¹4
 
-console.log('Çàäàíèå ¹4. Ôóíêöèÿ êîòîðàÿ ðàçâîðà÷èâàåò ââåä¸ííîå ÷èñëî çàäîì íàïåð¸ä');
+console.log('Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ Â¹4. Ã”Ã³Ã­ÃªÃ¶Ã¨Ã¿ ÃªÃ®Ã²Ã®Ã°Ã Ã¿ Ã°Ã Ã§Ã¢Ã®Ã°Ã Ã·Ã¨Ã¢Ã Ã¥Ã² Ã¢Ã¢Ã¥Ã¤Â¸Ã­Ã­Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã® Ã§Ã Ã¤Ã®Ã¬ Ã­Ã Ã¯Ã¥Ã°Â¸Ã¤');
 
 let numberNoRevers = +prompt('Enter the number', '');
 console.log(numberNoRevers);
@@ -91,16 +91,16 @@ console.log(numberReverse(numberNoRevers));
 console.log('  ');
 
 
-//Çàäàíèå ¹5 
+//Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ Â¹5 
 
-console.log('Çàäàíèå ¹5. Ôóíêöèÿ äëÿ ðåøåíèÿ êâàäðàòí óðàâíåíèé');
+console.log('Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ Â¹5. Ã”Ã³Ã­ÃªÃ¶Ã¨Ã¿ Ã¤Ã«Ã¿ Ã°Ã¥Ã¸Ã¥Ã­Ã¨Ã¿ ÃªÃ¢Ã Ã¤Ã°Ã Ã²Ã­ Ã³Ã°Ã Ã¢Ã­Ã¥Ã­Ã¨Ã©');
 
 let a = +prompt ('Enter the number A', '');
 let b = +prompt ('Enter the number B', '');
 let c = +prompt ('Enter the number C', '');
 
 function sqrt(a, b, c) {
-	let disc = (b * b) - (4 * a * c);	
+	let disc = (b * b) - (4 * a * c); // b**2	
 
 	if (disc > 0) {
 		var x1 = -b + Math.sqrt(disc) / 2 * a;
@@ -109,7 +109,7 @@ function sqrt(a, b, c) {
 	} else if (disc == 0) {
 		var x0 = -b / 2 * a;
 		return ('One root' + 'x0 = ' + x0);
-	} else if (disc < 0) {
+	} else if (disc < 0) { // Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð¸Ð·Ð±Ñ‹Ñ‚Ð¾Ñ‡Ð½Ð°
 		return ('No roots!');
 	}
 }

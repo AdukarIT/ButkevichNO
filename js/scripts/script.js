@@ -1,6 +1,6 @@
 //Задание №1
 
-var x = prompt ('Enter the flat number', '');
+var x = prompt ('Enter the flat number', ''); // названия переменных!
 
 console.log('Задание №1');
 
@@ -74,18 +74,21 @@ console.log('Задание №4');
 console.log(n + ':  ' + n + '*1=' + (n * 1) + '  ' + n + '*2=' + (n * 2) + '  ' + n + '*3=' + (n * 3) + '  ' + n + '*4=' + (n * 4)+ '  ' + n + '*5=' + (n * 5)+ '  ' + n + '*6=' + (n * 6)+ '  ' + n + '*7=' + (n * 7)+ '  ' + n + '*8=' + (n * 8)+ '  ' + n + '*9=' + (n * 9)+ '  ' + n + '*10=' + (n * 10));
 console.log(' ');
 
+// перепишите используя цикл
+
 //Задание №5
 var s = 1;
 
 console.log('Задание №5');
 for (s; s < 50; s++) {
-	console.log(s++);
+	console.log(s++); 
 }
 console.log(' ');
 
+// задача не решена - выведет все числа не из того диапозона
 
 //Задание №6
-var f0 = 0;
+var f0 = 0; // переменные
 var f1 = 1;
 
 console.log('Задание №6');
@@ -104,6 +107,6 @@ var j = '#' + ' ';
 
 console.log('Задание №7');
 for (i = 0; i < 4; i++) {
-	console.log(h + h + h + h);
+	console.log(h + h + h + h); // тут тоже можно циклом
 	console.log(j + j + j + j);
 }
