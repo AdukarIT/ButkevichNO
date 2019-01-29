@@ -75,3 +75,7 @@
 ## Функции
  
  [Функции](https://github.com/AdukarIT/ButkevichNO/tree/master/js_function)
+
+## Практика JS	
+ 	
+ [Практические задачи JS](https://github.com/AdukarIT/ButkevichNO/tree/master/js_practices)
