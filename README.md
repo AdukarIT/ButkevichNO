@@ -79,3 +79,7 @@
 ## Практика JS	
  	
  [Практические задачи JS](https://github.com/AdukarIT/ButkevichNO/tree/master/js_practices)
+
+## Массивы
+
+ [Массивы](https://github.com/AdukarIT/ButkevichNO/tree/master/js_array)
