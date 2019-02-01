@@ -83,3 +83,7 @@
 ## Массивы
 
  [Массивы](https://github.com/AdukarIT/ButkevichNO/tree/master/js_array)
+
+## Объекты
+	
+ [Объекты](https://github.com/AdukarIT/ButkevichNO/tree/master/js_object)
