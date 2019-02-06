@@ -8,7 +8,7 @@ var city = {
 	population: 12220000
 }
 
-var stringPrompt = 'population'; // очень странное название
+var stringPrompt = 'population'; // очень странное название для переменной
 
 function findStringInObject(city, stringPrompt){
 	if (stringPrompt in city) return true; // надеюсь вы помните про аптимизацию таких выражений 
