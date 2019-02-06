@@ -8,11 +8,11 @@ var city = {
 	population: 12220000
 }
 
-var stringPrompt = 'population';
+var stringPrompt = 'population'; // очень странное название
 
 function findStringInObject(city, stringPrompt){
-	if (stringPrompt in city) return true;
-	return false;
+	if (stringPrompt in city) return true; // надеюсь вы помните про аптимизацию таких выражений 
+	return false; // но если что, внутри достаточно return stringPrompt in city;
 }
 
 console.log(findStringInObject(city, stringPrompt));
@@ -33,7 +33,7 @@ var recipe = {
 		pepper: 1/8
 	},
 
-	portion: 1
+	portion: 1 // не выполнены условия задачи
 }
 
 var getPortion = +prompt('Введите количество порций', '');
@@ -59,8 +59,8 @@ console.log('Задание №3');
 var cylinder = {
 	radius: 3,
 	height: 5,
-	volume: function() {
-		console.log('Обьем цилиндра равен = ' + 3.14 * (this.radius ** 2) * this.height);
+	volume: function() { // не выполнены условия задачи
+		console.log('Обьем цилиндра равен = ' + 3.14 * (this.radius ** 2) * this.height); // такие выражения трудно читать, лучше разбивать
 	}
 }
 
@@ -69,7 +69,7 @@ console.log(' ');
 
 
 //Task 4
-console.log('Задание №4');
+console.log('Задание №4'); // решение не соответствует задаче
 
 var penguin = {
 	name: 'Whiteblack',
