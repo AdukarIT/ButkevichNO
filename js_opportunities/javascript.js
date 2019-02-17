@@ -1,5 +1,12 @@
-/*console.log('Задание №1');
-
+//Task 1
+//Напишите функцию, которая принимает массив случайных чисел (см. задачу 2 в практике) 
+//и создаёт на его основе новый. Элементы нового массива – объекты вида {initial: num1, 
+//sqrt: num2, floor: boolean1, ceil: boolean2}. initial – значение элемента исходного 
+//массива с тем же индексом, sqrt – корень квадратный из этого значения. Если округление 
+//числа по обычным математическим правилам сходится с его округлением через floor, то 
+//floor = true, а ceil = false. Если сходится с округлением через ceil - наоборот. 
+//Например, пусть у исходного массива arr[0] = 19, тогда в новом массиве newArr[0] 
+//= {initial: 19, sqrt: 4.358898943540674, floor: true, ceil: false}
 function getArray() {
 	let arrayObject = [];
 	let max = 50;	
@@ -21,7 +28,8 @@ function getArray() {
 console.log(getArray());
 
 
-console.log('Задание №3');
+//Task 3
+//Напишите функцию, которая определяет, является ли строка палиндромом.
 function palindrome(){
 	let userString = prompt('Enter the string', '');
 
@@ -29,15 +37,13 @@ function palindrome(){
 	
 	if (userString == userStringRevers) console.log('It is a palindrome');
 		else console.log('Not a palindrome');
-	
-	
 }
-console.log(palindrome());*/
+console.log(palindrome());
 
 //Task 5
 //Напишите функцию, которая получает в аргументы три строки – str, search, replace.
 //Функция ищет ВСЕ вхождения search в str, заменяет каждую подстроку search на подстроку replace и возвращает результат.
-/*var str = prompt('Введите строку');
+var str = prompt('Введите строку');
 var search = prompt('Введите подстроку поиска');
 var replace = prompt('Введите заменяемый елемент');
 
@@ -54,11 +60,11 @@ function replaceFindElement(str, search, replace){
 
 	console.log(str);
 }
-console.log(replaceFindElement(str, search, replace));*/
+console.log(replaceFindElement(str, search, replace));
 
 //Task 6
 //Напишите функцию, которая замяняет первую букву каждого слова в строке на такую же большую.
-/*function getFirstWordLetterToUpperCase(){
+function getFirstWordLetterToUpperCase(){
 	var string = prompt('Введите предложение', '');
 	var stringToArray = string.split('');
 	
@@ -74,26 +80,12 @@ console.log(replaceFindElement(str, search, replace));*/
 
 	console.log(string);
 }
-console.log(getFirstWordLetterToUpperCase());*/
-
-//Task 7
-function a(str){
-	var split = str.split('');
-
-	for (var i = 0; i < split.length; i++) {
-		if (split[i] == split[i+1]) split[i] = '+';
-	}
-
-	str = split.join('');
-	console.log(str);
-}
-console.log(a('я учусь программированию'));
-
-
+console.log(getFirstWordLetterToUpperCase());
 
 
 //Task 8
-/*function getWeekDay(){
+//Напишите функцию, которая возвращает текущий день недели на русском языке.
+function getWeekDay(){
 	var day = new Date();
 	var numberOfDay = day.getDay();
 
@@ -124,14 +116,13 @@ console.log(a('я учусь программированию'));
 	}
 }
 
-console.log(getWeekDay());*/
+console.log(getWeekDay());
 
 
 //Task 9
 //Напишите функцию, которая принимает у пользователя дату в формате "ДД-ММ-ГГГГ" и,
 // используя функцию из задачи 8, выдаёт в консоль день недели для этой даты.
-
-/*function getDate(){
+function getDate(){
 	var userDate = prompt('Введите день рождения в формате "ДД-ММ-ГГГГ"', '');;
 	var userDay = userDate.slice(0, 2);
 	var userMonth = userDate.slice(2, 4);
@@ -166,14 +157,14 @@ console.log(getWeekDay());*/
     		console.log('Нет такого дня недели');
 	}
 }
-console.log(getDate());*/
+console.log(getDate());
+
 
 //Task 10
 //Примите у пользователя день его рождения в формате "ДД-ММ-ГГГГ". Напишите функцию, которая выводит в консоль количество дней,
 //оставшихся до его дня рождения. Напишите функцию, которая возвращает дату, в которую пользователь отметит ближайший 1000-дневный
 //юбилей (например, 11000 дней).
-
-/*function getDateBirthday(){
+function getDateBirthday(){
 	var nowDate = new Date();
 
 	var DateBirthday = prompt('Введите день рождения в формате "ДД-ММ-ГГГГ"', '');
@@ -195,7 +186,7 @@ console.log(getDate());*/
 	console.log('До 10000-дневный юбилея осталось: ' + a + ' дней');
 
 }
-console.log(getDateBirthday());*/
+console.log(getDateBirthday());
 
 
 //Task 11
@@ -204,7 +195,7 @@ console.log(getDateBirthday());*/
 // Используя задачу 2 из практики, создайте массив целых чисел. Вызовите написанную функцию для каждого элемента,
 //  отлавливая ошибки и выводя в консоль сообщения и о них, и об успешных результатах. Массив должен быть пройден 
 //  до конца, несмотря на ошибки!
-/*var arrayRandom = [];
+var arrayRandom = [];
 
 function randomArray(arrayRandom){
 	var arrayLength = +prompt('Введите длину массива', '');
@@ -236,4 +227,4 @@ function findError() {
 		}
 	}
 }
-console.log(findError());*/
+console.log(findError());
