@@ -87,3 +87,15 @@
 ## Объекты
 	
  [Объекты](https://github.com/AdukarIT/ButkevichNO/tree/master/js_object)
+
+## Встроенные возможности JavaScript
+
+ [Встроенные возможности JavaScript](https://github.com/AdukarIT/ButkevichNO/tree/master/js_opportunities)
+
+## Продвинутый JavaScript
+
+ [Продвинутый JavaScript](https://github.com/AdukarIT/ButkevichNO/tree/master/js_advancedJS)
+
+## DOM. Работа со страницей
+
+ [DOM. Работа со страницей](https://github.com/AdukarIT/ButkevichNO/tree/master/js_dom)
