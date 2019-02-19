@@ -1,0 +1,30 @@
+.imageFancyBox {
+	width: 300px;
+	height: 200px;
+}
+
+.image-monkey {
+	position: absolute;
+	z-index: 10;
+	transform: scale(.7);
+}
+
+.background {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	background: rgba(0, 0, 0 , .7);
+}
+
+.close {
+	position: absolute;
+	display: none;
+	top: 10%;
+	right: 5%;
+	z-index: 5;
+}
