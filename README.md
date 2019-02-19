@@ -99,3 +99,7 @@
 ## DOM. Работа со страницей
 
  [DOM. Работа со страницей](https://github.com/AdukarIT/ButkevichNO/tree/master/js_dom)
+
+## События. Координаты на странице
+
+ [События. Координаты на странице](https://github.com/AdukarIT/ButkevichNO/tree/master/js_developments)
