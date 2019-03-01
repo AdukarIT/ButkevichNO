@@ -40,7 +40,7 @@ function changeClassByRadio(){
 	var tableThird = document.getElementById('radio-third');
 
 	radioFirst.addEventListener('click', function(e){
-		if (radioFirst.checked == true) table.className = 'bordered';
+		if (radioFirst.checked == true) table.className = 'bordered'; // проверка на тру излишня, тру есть тру, зачем его сравнивать с тру
 	});
 	tableSecond.addEventListener('click', function(e){
 		if (tableSecond.checked == true) table.className = 'striped';
@@ -65,7 +65,7 @@ function alertMessage(){
 	});
 
 	cancel.addEventListener('click', function(e){
-		button.disabled = true;
+		button.disabled = true; // нужно было отключить событие, а не выключить кнопку
 	});
 }
 alertMessage();
@@ -87,13 +87,13 @@ function getInfo(elem){
       alert( typeof this );
     };
 
-    var self = this;
+    var self = this; // насмотрелись?) обязательно на занятие расскажите, как оно всё работает
 
     elem.onclick = function(e) {
       var target = e.target;
       var action = target.getAttribute('id');
       if (action) {
-        self[action]();
+        self[action](); 
       }
     };
 }
