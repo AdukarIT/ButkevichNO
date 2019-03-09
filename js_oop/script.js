@@ -125,5 +125,3 @@ menuBigMac.addEventListener('click', function(){
 	alert('Вы выбрали ' + caloriesBigMac.name + '. Каллорий: ' + caloriesBigMac.burgerSummCalories() + '. Стоимость ' + caloriesBigMac.price + ' руб.');
 });
 
-
-//Task 3
