@@ -12,10 +12,11 @@
 			<input type="button" id="BigMac" value="BigMac">
 		</form>
 		
-		<form name="alarm" action="">
+		<form name="alarm" action="" method="POST">
 			<p>Напомнить</p>
-			<input type="text" id="event" placeholder="Запишите ваше событие"><br>
-			<input type="time" id="time">
+			<input type="text" id="note" placeholder="Запишите ваше событие"><br>
+			<input type="datetime-local" id="time">
+			<input type="button" name="send" value="Napomnit">
 		</form>
 		<script type="text/javascript" src="script.js"></script>
 	</body>
