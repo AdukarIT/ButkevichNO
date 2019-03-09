@@ -1,4 +1,4 @@
-//Task 1
+	//Task 1
 //Реализуйте класс Student (Студент), который будет наследовать от класса User. 
 //Этот класс должен иметь следующие свойства: name (имя, наследуется от User), surname (фамилия, наследуется от User),
 // year (год поступления в вуз). Класс должен иметь метод getFullName() (наследуется от User), с помощью которого можно
@@ -59,60 +59,71 @@ console.log( studentName.getFullName() + studentCourse.getCourse(2017) );
 //Task 2
 //Напишите программу, расчиытвающую стоимость и калорийность гамбургеров (чисбургер, бигмак и тд), используя ООП подход.
 //реализовал следующим образом, возможно это не так задумывалось
-var burgerObject = {
-	bun: 30,
-	meat: 60,
-	muskart: 5,
-	ketchup: 10,
-	onion: 12,
-	cucumberm: 7
+var burger = function() {
+	this.burgerIngridientCalories = {
+		bun: 90,
+		meat: 112,
+		muskart: 7,
+		ketchup: 12,
+		onion: 5,
+		cucumberm: 5
+	};
+
+	this.burgerSummCalories = function(){
+		var summ = 0;
+
+		for (var cat in this.burgerIngridientCalories){
+			summ += this.burgerIngridientCalories[cat];
+		}
+
+		return summ;
+	};
 }
 
-var Hamburger = function(ham){
+var Hamburger = function(){
+	burger.call(this);
 	this.name = 'Hamburger';
 	this.price = 2.50;
-	this.bun = ( ham.bun * 297 ) / 100;
-	this.meat = ( ham.meat * 187 ) / 100;
-	this.muskart = ( ham.muskart * 143 ) / 100;
-	this.ketchup = ( ham.ketchup * 112 ) / 100;
-	this.onion = ( ham.onion * 43 ) / 100;
-	this.cucumberm = ( ham.cucumberm * 13 ) / 100;
 }
 
-var Cheeseburger = function(ham, cheese){
-	Hamburger.apply(this, arguments);
+var Cheeseburger = function(){
+	burger.call(this);
+	this.burgerIngridientCalories['cheese'] = 25;
+
 	this.name = 'Cheeseburger';
 	this.price = 3.20;
-	this.cheese = ( cheese * 300 ) / 100;
+	
 }
 
-var BigMac = function(ham, salad){
-	Cheeseburger.apply(this, arguments);
+var BigMac = function(){
+	burger.call(this);
+	this.burgerIngridientCalories['cheese'] = 45;
+	this.burgerIngridientCalories['salad'] = 10;
+
 	this.name = 'BigMac';
 	this.price = 4.50;
-	this.salad = ( salad * 20 ) / 100;
 }
 
-var massHamburger = new Hamburger(burgerObject),
-	massCheeseburger = new Cheeseburger(burgerObject, '15'),
-	massBigMac = new BigMac(burgerObject, '30'),
+var caloriesHamburger = new Hamburger(),
+	caloriesCheeseburger = new Cheeseburger(),
+	caloriesBigMac = new BigMac(),
 	menu = document.forms.menu,
 	menuHamburger = menu.elements.Hamburger,
 	menuCheeseburger = menu.elements.Cheeseburger,
-	menuBigMac = menu.elements.BigMac,
-	calories = 0;
+	menuBigMac = menu.elements.BigMac
+	;
 
 menuHamburger.addEventListener('click', function(){ 
-	calories = massHamburger.bun + massHamburger.meat + massHamburger.muskart + massHamburger.ketchup + massHamburger.onion + massHamburger.cucumberm;
-	alert('Вы выбрали ' + massHamburger.name + '. Каллорий: ' + calories + '. Стоимость ' + massHamburger.price + ' руб.');
+	alert('Вы выбрали ' + caloriesHamburger.name + '. Каллорий: ' + caloriesHamburger.burgerSummCalories() + '. Стоимость ' + caloriesHamburger.price + ' руб.');
 });
 
 menuCheeseburger.addEventListener('click', function(){ 
-	calories = massCheeseburger.bun + massCheeseburger.meat + massCheeseburger.muskart + massCheeseburger.ketchup + massCheeseburger.onion + massCheeseburger.cucumberm + massCheeseburger.cheese;
-	alert('Вы выбрали ' + massCheeseburger.name + '. Каллорий: ' + calories + '. Стоимость ' + massCheeseburger.price + ' руб.');
+	alert('Вы выбрали ' + caloriesCheeseburger.name + '. Каллорий: ' + caloriesCheeseburger.burgerSummCalories() + '. Стоимость ' + caloriesCheeseburger.price + ' руб.');
 });
 
 menuBigMac.addEventListener('click', function(){
-	calories = massBigMac.bun + massBigMac.meat + massBigMac.muskart + massBigMac.ketchup + massBigMac.onion + massBigMac.cucumberm + massBigMac.cheese + massBigMac.salad;
-	alert('Вы выбрали ' + massBigMac.name + '. Каллорий: ' + calories + '. Стоимость ' + massBigMac.price + ' руб.');
+	alert('Вы выбрали ' + caloriesBigMac.name + '. Каллорий: ' + caloriesBigMac.burgerSummCalories() + '. Стоимость ' + caloriesBigMac.price + ' руб.');
 });
+
+
+//Task 3
