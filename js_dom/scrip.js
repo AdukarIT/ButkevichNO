@@ -9,16 +9,16 @@ element.className = 'www';
 //Task 2
 //Дан элемент #elem. Проверьте наличие у него класса "www", если есть - удалите класс
 //как я понимаю мы сам класс удалить не можем, можем очистить его имя, т.е. присвоить пустую строку
-if (element.className == 'www') element.className = '';
+if (element.className == 'www') element.className = ''; // вы удалили все классы а не www
 
 
 //Task 3
 //Напишите функцию поиска recursiveSearchTags, которая принимает на вход document и имя тега, 
 //а возвращает массив из всех элементов соответствующих этому тегу. Поиск идет в теге body
-var arrayElements = [];
+var arrayElements = []; // это должно быть внутри функции
 function recursiveSearchTags(body, tag){
 	var divChild = body.getElementsByTagName(tag);
-	return arrayElements = [].slice.call(divChild);
+	return arrayElements = [].slice.call(divChild); // вы вернули undefined, почему?
 }
 console.log(recursiveSearchTags(document.body, 'div'));	
 
@@ -55,4 +55,4 @@ var prevElement = document.getElementById('elem').previousElementSibling.innerTe
 //или
 var elem = document.getElementById('elem');
 var elemPrev = elem.previousElementSibling;
-elemPrev.innerHTML = '!';
+elemPrev.innerHTML = '!'; // переписали всё внутри, а не добавили

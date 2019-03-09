@@ -10,7 +10,7 @@ function placeOrder(){
 	if ( formElementsName.value == '' ) alert('Введите Ваше Имя');
 
 	if ( isNaN(formElementsMinutes) ) alert('Введите корректно количество минут');
-}
+} // только не ясно, когда этот код выполниться. нужно было повесить на обработчик
 
 
 //Task 2
@@ -37,8 +37,10 @@ function sendEmail(){
 
 //на мой взгляд универсальня функция она подойдет для любого случая проверки, но если применять ее для формы, то:
 	// 1. форм на сайте может быть множество от 2 и боллее, т.е. в любом случае нужно будет вностить изменения в код функции
+	// почему?
 	// 2. полей в форме также может быть можество, и они могут быть разного типа и для них нужны разные провеки, для меня проще 
 	//    это реализовать для каждой формые разную проерку, в конце концов есть ctrl+c и ctrl+v
+	// что это значит?
 function checkFormInputs() {
 	var feedBackForm = document.forms.formThird, 
 		formName = feedBackForm.elements.name,
@@ -46,7 +48,7 @@ function checkFormInputs() {
 		formPhone = feedBackForm.elements.phone,
 		formSubmit = feedBackForm.elements.send,
 		regForName = /\D{1,}/i;
-		regForEmail = /.{1,}@\D{1,}.\D{1,}/i;
+		regForEmail = /.{1,}@\D{1,}.\D{1,}/i; // [ @фыва.aosehhh
 		regForPhone = /\+\d{11}/i;
 
 	if ( regForName.test(formName.value) == false ) alert('Не корректно введено имя');
@@ -95,7 +97,7 @@ function colorBorderFormInputs(){
 			feedBackForm.submit();
 			alert('Регистрация прошла успешно!');
 	}
-}
+} // подумайте над оптимизацией кода, у вас много дублирований
 
 
 //Task 5
@@ -113,7 +115,7 @@ changeWord();
 //С помощью test определите, что переданная строка является корректным временем вида '9.59 am', '12.30 pm'.
 function correctString(){
 	var string = "15.15 am", 
-		regExp = /\d{1,2}.\d{2}\s\D{2}/ig,
+		regExp = /\d{1,2}.\d{2}\s\D{2}/ig, // 99.99 zc
 		result = regExp.test(string);
 	
 	console.log(result);
