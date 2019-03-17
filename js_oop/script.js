@@ -125,3 +125,4 @@ menuBigMac.addEventListener('click', function(){
 	alert('Вы выбрали ' + caloriesBigMac.name + '. Каллорий: ' + caloriesBigMac.burgerSummCalories() + '. Стоимость ' + caloriesBigMac.price + ' руб.');
 });
 
+var alarm = document.forms.alarm, alarmEvent = alarm.elements.note, alarmTime = alarm.elements.time, alarmButton = alarm.elements.send ; alarmButton.addEventListener('click', function(){ var milliseconds = Date.parse(alarmTime.value); setTimeout(function(){ alert(alarmEvent.value); }, milliseconds); });

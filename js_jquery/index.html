@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery</title>
+	<style type="text/css">
+
+		.span {
+			display: inline-block;
+			width: 12px;
+			height: 10px;
+		}
+
+		.inputChecked {
+			background: url('checked.svg') no-repeat center center;
+		}
+
+		.namespan:before, .emailspan:before, .phonenumberspan:before, .messagespan:before {
+			content: "Введите данное поле";
+		}
+	</style>
+</head>
+<body>
+	<form name="feedback" id='feedbackform' action="" method="POST">
+		<p>
+			<label for="name">Name</label>
+			<input type="text" id="name"><span id="namespan" class="span"></span>
+		</p>
+		<p>
+			<label for="email">E-mail</label>
+			<input type="email" id="email"><span id="emailspan" class="span"></span>
+		</p>
+		<p>
+			<label for="phonenumber">Phone number</label>
+			<input type="tel" id="phonenumber"><span id="phonenumberspan" class="span"></span>
+		</p>
+		<p>
+			<label for="message">You'r message</label><br>
+			<textarea id="message"></textarea><span id="messagespan" class="span"></span>
+		</p>
+		<p>
+			<input type="submit" value="Submit" name="submit" id="submit">
+			<input type="reset" name="clearform">
+		</p>
+	</form>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="srcipt.js"></script>
+</body>
+</html>
