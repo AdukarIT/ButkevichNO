@@ -19,23 +19,19 @@ $.ajax('https://jsonplaceholder.typicode.com/albums', {
 			success: function(photosData){
 				photosData.forEach(function(element){
 					var photos = 
-						$('.albumPhotos').append("<img src=" + "'" + element.url + "'" + " id=" + "'"+ element.albumId + "' class=" + "'" + element.albumId + "'" + ">");
+						$('.albumPhotos').append("<img src=" + "'" + element.url + "'" + " id=" + "'"+ element.albumId + "'" + ">");
 
 				});
 				
-				console.log(photosData[15].albumId);
+				console.log(photosData[15].albumId)
 
 				$('.albumPhotos img').hide();
-
+								
 				$('.button').click(function(){
-					var album =  $('.albumSelect option:selected'),
-						photo = album.id
-						;
-
-					photosData.forEach(function(item){
-						if ( photo === item.userId){
-							$('.albumPhoto img').attr('id', '"' + item.userId + '"' ).show();
-						}
+					photosData.forEach(function(element){
+						if ( $('.albumSelect option:selected').attr('id') == element.albumId ) {
+							$('.albumPhotos img').attr( 'id', '"' + element.albumId + '"' ).show();
+						};
 					});
 				});
 			}
