@@ -28,7 +28,7 @@ var Student = function(){
 	this.getCourse = function(year){
 		var course = dateYear - year;
 
-		switch (course) {
+		switch (course) { // может просто coures + 1
 			case 0: 
 				return ' на ' + 1 + ' курсе';
 				break;
@@ -113,7 +113,7 @@ var caloriesHamburger = new Hamburger(),
 	menuBigMac = menu.elements.BigMac
 	;
 
-menuHamburger.addEventListener('click', function(){ 
+menuHamburger.addEventListener('click', function(){ // коллбеки слишком похожи, чтоб писать их всякий раз
 	alert('Вы выбрали ' + caloriesHamburger.name + '. Каллорий: ' + caloriesHamburger.burgerSummCalories() + '. Стоимость ' + caloriesHamburger.price + ' руб.');
 });
 
@@ -125,4 +125,4 @@ menuBigMac.addEventListener('click', function(){
 	alert('Вы выбрали ' + caloriesBigMac.name + '. Каллорий: ' + caloriesBigMac.burgerSummCalories() + '. Стоимость ' + caloriesBigMac.price + ' руб.');
 });
 
-var alarm = document.forms.alarm, alarmEvent = alarm.elements.note, alarmTime = alarm.elements.time, alarmButton = alarm.elements.send ; alarmButton.addEventListener('click', function(){ var milliseconds = Date.parse(alarmTime.value); setTimeout(function(){ alert(alarmEvent.value); }, milliseconds); });
+var alarm = document.forms.alarm, alarmEvent = alarm.elements.note, alarmTime = alarm.elements.time, alarmButton = alarm.elements.send ; alarmButton.addEventListener('click', function(){ var milliseconds = Date.parse(alarmTime.value); setTimeout(function(){ alert(alarmEvent.value); }, milliseconds); }); // энтер сломался, понимаю
