@@ -22,8 +22,6 @@ $.ajax('https://jsonplaceholder.typicode.com/albums', {
 						$('.albumPhotos').append("<img src=" + "'" + element.url + "'" + " id=" + "'"+ element.albumId + "'" + ">");
 
 				});
-				
-				console.log(photosData[15].albumId)
 
 				$('.albumPhotos img').hide();
 								
