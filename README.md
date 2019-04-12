@@ -120,3 +120,5 @@
 ## Библиотека jQuery. AJAX и анимации
 
  [Библиотека jQuery. AJAX и анимации](https://github.com/AdukarIT/ButkevichNO/tree/master/js_jquery-part2)
+ 
+## [Промежуточный проект по JavaScript](https://nikitabutkevich.github.io/collection/)
