@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<table id='tableBook' border="1">
+	  <thead>
+	  	<tr>
+		    <td class="tr1">Имя клиента</td>
+		    <td class="tr1">Телефон</td>
+		    <td class="tr1">Дата обращения</td>
+		    <td class="tr1">Тип обращения</td>
+	  	</tr>
+	  </thead>
+	  <tbody id="tableBody"></tbody>
+	</table>
+
+	<div id="dialog" title="Новое обращение клиента">
+	  <form id="addNewComment">
+	    <label for="nameUser" class="label-text">Имя клиента</label>
+	    <input type="text" id="nameUser" name="nameUser"><br>
+	    <label for="phoneNumber" class="label-text">Телефон</label>
+	    <input type="tel" id="phoneNumber" name="phoneNumber"><br>
+	    <label for="date" class="label-text">Дата обращения</label>
+	    <input type="date" id="date" name="date"><br>
+	    <label for="commentType" class="label-text">Причина обращения</label>
+	    <select id="commentType" name="commentType">
+	      <option value="" selected>Выберите причину обращения</option>
+	      <option value="Вопрос">Вопрос</option>
+	      <option value="Жалоба">Жалоба</option>
+	      <option value="Благоданость">Благоданость</option>
+	    </select><br>
+	  </form>
+	</div>
+
+	<button id="openButton" class="button">Новое обращение</button>
+	<button id="deleteItem" class="button">Удалить</button>
+
+	<div id="deleteDialog" title="Удаление обращения">
+		<p>Вы действительно хотите удалить данное обращение?</p>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

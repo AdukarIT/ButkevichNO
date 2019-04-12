@@ -1,0 +1,40 @@
+#tableBook {
+  border: 2px solid;
+}
+
+#tableBody .ui-selecting {  background: #FECA40; 
+}
+
+#tableBody .ui-selected { background: #F39814; color: white; }
+
+.tr1 {
+ border: 1.3px solid;
+ font-weight: 700;
+}
+
+#addNewComment {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.button {
+  margin: 1rem;
+  padding: .5rem;
+  background: #fff;
+  border: 2px solid ;
+  font-weight: 700;
+}
+
+.button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+}
