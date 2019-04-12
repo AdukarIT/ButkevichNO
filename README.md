@@ -122,3 +122,8 @@
  [Библиотека jQuery. AJAX и анимации](https://github.com/AdukarIT/ButkevichNO/tree/master/js_jquery-part2)
  
 ## [Промежуточный проект по JavaScript](https://nikitabutkevich.github.io/collection/)
+
+
+## Библиотека jQuery. Плагины
+ 
+ [Библиотека jQuery. Плагины](https://github.com/AdukarIT/ButkevichNO/tree/master/js_jquery-part3)
