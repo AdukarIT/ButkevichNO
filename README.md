@@ -127,3 +127,9 @@
 ## Библиотека jQuery. Плагины
  
  [Библиотека jQuery. Плагины](https://github.com/AdukarIT/ButkevichNO/tree/master/js_jquery-part3)
+
+## Итоговы проект 
+	
+# Код (https://github.com/nikitabutkevich/nikitabutkevich.github.io/tree/master/FinalProject)
+
+# Приложение (https://nikitabutkevich.github.io/FinalProject)
